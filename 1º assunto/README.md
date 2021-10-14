@@ -15,6 +15,7 @@ Os códigos fontes do *Portugol Studio* possuem a extensão `.por`. Esses estão
 |[4 - ValorDaContaDeAgua.por](https://github.com/StelmoNetto/IPEE/blob/main/1%C2%BA%20assunto/4%20-%20ValorDaContaDeAgua.por "4 - ValorDaContaDeAgua.por")|Cálculo da conta de água e um desconto|
 |[5 - convDeTipos.por](https://github.com/StelmoNetto/IPEE/blob/main/1%C2%BA%20assunto/5%20-%20convDeTipos.por "5 - convDeTipos.por")|Conversão de tipo em operações e atribuições|
 |[6 - cduudc.por](https://github.com/StelmoNetto/IPEE/blob/main/1%C2%BA%20assunto/6%20-%20cduudc.por "6 - cduudc.por")|Inverter um inteiro $N=CDU$ de três dígitos para $M=UDC$|
+|[8 - equacoesSimples.por](https://github.com/StelmoNetto/IPEE/blob/main/1%C2%BA%20assunto/8%20-%20equacoesSimples.por "8 - equacoesSimples.por")|Operações aritméticas simples|
 |[8 - adicaoDeTiposNaoNumericos.por](https://github.com/StelmoNetto/IPEE/blob/main/1%C2%BA%20assunto/8%20-%20adicaoDeTiposNaoNumericos.por "8 - adicaoDeTiposNaoNumericos.por")|Operador de adição em tipos não numéricos|
 |[9 -exemploOpRelacionais.por](https://github.com/StelmoNetto/IPEE/blob/main/1%C2%BA%20assunto/9%20-exemploOpRelacionais.por "9 -exemploOpRelacionais.por")|Operações relacionais|
 |[9 - verificaSeMultiplo.por](https://github.com/StelmoNetto/IPEE/blob/main/1%C2%BA%20assunto/9%20-%20verificaSeMultiplo.por "9 - verificaSeMultiplo.por")|Verifica se o primeiro inteiro é múltiplo do segundo|
