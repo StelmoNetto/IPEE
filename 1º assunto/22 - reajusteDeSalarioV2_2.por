@@ -6,9 +6,9 @@ programa
 		const real MENORSALARIO = 500.0
 		const real MAIORSALARIO = 1000.0
 
-		const real PRIMEIROPERCENTUAL = 0.15
-		const real SEGUNDOPERCENTUAL = 0.1
-		const real TERCEIROPERCENTUAL = 0.05
+		const real QUINZEPORCENTO = 0.15
+		const real DEZPORCENTO = 0.1
+		const real CINCOPORCENTO = 0.05
 		
 		real salario
 		real salarioReajustado, percentualDeReajuste
@@ -18,17 +18,17 @@ programa
 
 		se(salario < MENORSALARIO)
 		{
-			percentualDeReajuste = PRIMEIROPERCENTUAL
+			percentualDeReajuste = QUINZEPORCENTO
 		}
 		senao //salario >= 500
 		{
 			se (salario < MAIORSALARIO)
 			{
-				percentualDeReajuste = SEGUNDOPERCENTUAL
+				percentualDeReajuste = DEZPORCENTO
 			}
 			senao //salario >= 1000
 			{
-				percentualDeReajuste = TERCEIROPERCENTUAL
+				percentualDeReajuste = CINCOPORCENTO
 			}
 		}
 		
@@ -41,8 +41,8 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 474; 
- * @PONTOS-DE-PARADA = ;
+ * @POSICAO-CURSOR = 742; 
+ * @PONTOS-DE-PARADA = 17;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;

@@ -3,17 +3,17 @@ programa
 	
 	funcao inicio()
 	{
-		const real LIMITEDEATENCAO = 55.0
-		const real LIMITEMAXIMO = 80.0
+		const real VELOCIDADEDEATENCAO = 55.0
+		const real VELOCIDADEMAXIMA = 80.0
 		real velocidade
 
 		escreva("Qual a sua velocidade?\n")
 		leia(velocidade)
 
-		se(velocidade > LIMITEDEATENCAO)
+		se(velocidade > VELOCIDADEDEATENCAO)
 		{
 			//Só chego aqui caso o 1º se seja verdadeiro
-			se(velocidade > LIMITEMAXIMO)
+			se(velocidade > VELOCIDADEMAXIMA)
 			{
 				escreva("Acima do limite da via!\n")
 			}
@@ -29,7 +29,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 465; 
+ * @POSICAO-CURSOR = 86; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
