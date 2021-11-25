@@ -8,8 +8,8 @@ programa
 		escreva("Entre com o número de termos do somatório\n")
 		leia(numeroDeValoresX)
 
-		logico valorIncorretoParaNumeroDeValoresX = numeroDeValoresX <= 0
-		se(valorIncorretoParaNumeroDeValoresX)
+		logico numeroDeValoresXIncorreto = numeroDeValoresX <= 0
+		se(numeroDeValoresXIncorreto)
 		{
 			escreva("Número de termos negativo ou nulo. Execute o programa novamente, ou mude-o.\n")			
 			retorne
@@ -33,7 +33,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 394; 
+ * @POSICAO-CURSOR = 181; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
