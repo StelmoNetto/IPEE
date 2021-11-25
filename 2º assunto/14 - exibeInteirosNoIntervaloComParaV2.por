@@ -11,13 +11,15 @@ programa
 		escreva("Entre com o limite superior do intervalo\n")
 		leia(m)
 
-		se(m >= n)
+		se(m < n)
 		{
-			para(i = n; i <= m; i++)
-			{
-				escreva("Valor de i: ", i, " quadrado de i: ", i * i, " e seu cubo: ", i * i * i,"\n")
-			}
+			escreva("O intervalo está incorreto: (n > m).\n")
+			retorne
 		}
+		para(i = n; i <= m; i++)
+		{
+			escreva("Valor de i: ", i, " quadrado de i: ", i * i, " e seu cubo: ", i * i * i,"\n")
+		}		
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -25,7 +27,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 332; 
+ * @POSICAO-CURSOR = 249; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

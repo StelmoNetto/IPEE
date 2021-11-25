@@ -6,7 +6,7 @@ programa
 	{
 		const inteiro NUMERODECASASDECIMAIS = 3
 		real resistencia, resistenciaEquivalente, somatorioDoInversoDasResistencias = 0.0
-		inteiro n, contagemDeResistenciasCorretas = 1
+		inteiro numeroDeResistores, contagemDeResistenciasCorretas = 1
 		logico numeroDeResistoresInvalido, resistenciaInvalida
 		
 		escreva("Programa calcula a resistência equivalente de qualquer número de resistores\n")
@@ -14,9 +14,9 @@ programa
 		faca
 		{
 			escreva("Entre com o número de resistores\n")
-			leia(n)
+			leia(numeroDeResistores)
 
-			numeroDeResistoresInvalido = n <= 0
+			numeroDeResistoresInvalido = numeroDeResistores <= 0
 			se(numeroDeResistoresInvalido)
 			{
 				escreva("Número de resistores negativo ou nulo.\nForneça um valor positivo maior que zero.\n\n")
@@ -41,11 +41,11 @@ programa
 			
 			contagemDeResistenciasCorretas++
 			
-		}enquanto(contagemDeResistenciasCorretas <= n)
+		}enquanto(contagemDeResistenciasCorretas <= numeroDeResistores)
 
 		resistenciaEquivalente = 1 / somatorioDoInversoDasResistencias
 
-		escreva("A resistência equivalente dos ", n, " resistores é igual a: ",Mt.arredondar(resistenciaEquivalente,NUMERODECASASDECIMAIS))
+		escreva("A resistência equivalente dos ", numeroDeResistores, " resistores é igual a: ",Mt.arredondar(resistenciaEquivalente,NUMERODECASASDECIMAIS))
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -53,7 +53,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1410; 
+ * @POSICAO-CURSOR = 206; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

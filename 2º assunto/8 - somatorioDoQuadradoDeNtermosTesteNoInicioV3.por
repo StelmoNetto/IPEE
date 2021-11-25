@@ -2,8 +2,8 @@ programa
 {
 	funcao inicio()
 	{
-		real soma = 0.0,x
-		inteiro cont = 1, numeroDeValoresX
+		real somatorio = 0.0,x
+		inteiro contagemDeIteracoes = 1, numeroDeValoresX
 
 		escreva("Entre com o número de termos do somatório\n")
 		leia(numeroDeValoresX)
@@ -16,15 +16,15 @@ programa
 		}
 
 		//processamento
-		enquanto(cont <= numeroDeValoresX)
+		enquanto(contagemDeIteracoes <= numeroDeValoresX)
 		{
-			escreva ("Entre com o valor de x",cont,"\n")
+			escreva ("Entre com o valor de x",contagemDeIteracoes,"\n")
 			leia(x)
 			
-			soma+= x * x
-			cont++
+			somatorio+= x * x
+			contagemDeIteracoes++
 		}
-		escreva("O somatório dos quadrados dos x's é: ", soma)	
+		escreva("O somatório dos quadrados dos x's é: ", somatorio)	
 		
 	}
 }
@@ -33,7 +33,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 181; 
+ * @POSICAO-CURSOR = 66; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

@@ -2,29 +2,29 @@ programa
 {
 	funcao inicio()
 	{
-		real soma = 0.0,x
-		inteiro cont = 1, numeroDeValoresX
+		real somatorio = 0.0,x
+		inteiro contagemDeIteracoes = 1, numeroDeValoresX
 
 		escreva("Entre com o número de termos do somatório\n")
 		leia(numeroDeValoresX)
 
-		se(numeroDeValoresX > 0)
-		{
-			enquanto(cont <= numeroDeValoresX)
-			{
-				escreva ("Entre com o valor de x",cont,"\n")
-				leia(x)
-				
-				soma+= x * x
-				cont++
-			}
-	
-			escreva("O somatório dos quadrados dos x's é: ", soma)	
-		}
-		senao
+		logico numeroDeValoresXIncorreto = numeroDeValoresX <= 0
+		se(numeroDeValoresXIncorreto)
 		{
 			escreva("Número de termos negativo ou nulo. Execute o programa novamente, ou mude-o.\n")
+			retorne
 		}
+		
+		enquanto(contagemDeIteracoes <= numeroDeValoresX)
+		{
+			escreva ("Entre com o valor de x",contagemDeIteracoes,"\n")
+			leia(x)
+			
+			somatorio+= x * x
+			contagemDeIteracoes++
+		}
+
+		escreva("O somatório dos quadrados dos x's é: ", somatorio)	
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -32,7 +32,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 522; 
+ * @POSICAO-CURSOR = 389; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
