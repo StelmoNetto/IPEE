@@ -11,8 +11,8 @@ programa
 		inteiro numeroDeDeslocamentos = 28 //(32 - 4) numero de deslocamento para o 1º nibble mais significativo
 		faca
 		{
-			inteiro msnDeslocadoParalsn = dado	>> numeroDeDeslocamentos
-			inteiro nibbleMenosSignificativoSelecionado = msnDeslocadoParalsn & MASCARASELETORADENIBBLE
+			inteiro nibbleDeslocadoParaLSN = dado >> numeroDeDeslocamentos
+			inteiro nibbleMenosSignificativoSelecionado = nibbleDeslocadoParaLSN & MASCARASELETORADENIBBLE
 			escreva(nibbleMenosSignificativoSelecionado," ")
 			numeroDeDeslocamentos-= NIBBLE
 		}enquanto(numeroDeDeslocamentos >= 0)
@@ -23,7 +23,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 244; 
+ * @POSICAO-CURSOR = 327; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
