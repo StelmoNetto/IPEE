@@ -2,20 +2,20 @@ programa
 {
 	funcao inicio()
 	{
-		inteiro soma,cont,x
-		cont = 1 //contagem
-		soma = 0 //acumula o somatório de x
+		inteiro somatorio,contagemDeIteracoes,x
+		contagemDeIteracoes = 1
+		somatorio = 0
 
-		enquanto(cont<=3)
+		enquanto(contagemDeIteracoes<=3)
 		{
-			escreva ("Entre com o valor de x",cont,"\n")
+			escreva ("Entre com o valor de x",contagemDeIteracoes,"\n")
 			leia(x)
 			
-			soma+= x
-			cont++
+			somatorio+= x
+			contagemDeIteracoes++
 		}
 
-		escreva("A soma e: ", soma)	
+		escreva("O resultado de x1 + x2 + x3 é: ", somatorio)	
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -23,9 +23,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 222; 
+ * @POSICAO-CURSOR = 274; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {soma, 5, 10, 4}-{cont, 5, 15, 4}-{x, 5, 20, 1};
+ * @SIMBOLOS-INSPECIONADOS = {x, 5, 40, 1};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
