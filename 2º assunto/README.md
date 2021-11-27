@@ -63,6 +63,7 @@ Os códigos fontes do *Portugol Studio* possuem a extensão `.por`. Esses estão
 |[41 - ponteiroParaElemDoVetorV2.por](https://github.com/StelmoNetto/IPEE/blob/main/2%C2%BA%20assunto/41%20-%20ponteiroParaElemDoVetorV2.por "41 - ponteiroParaElemDoVetorV2.por")|Ponteiro para elemento do vetor 2° versão|
 |[41 - ponteiroParaElemDoVetorV3.por](https://github.com/StelmoNetto/IPEE/blob/main/2%C2%BA%20assunto/41%20-%20ponteiroParaElemDoVetorV3.por "41 - ponteiroParaElemDoVetorV3.por")|Ponteiro para elemento do vetor 3° versão|
 |[42 - intervMat.por](https://github.com/StelmoNetto/IPEE/blob/main/2%C2%BA%20assunto/42%20-%20intervMat.por "42 - intervMat.por")|Intervalo de uma matriz|
-|[42 - intervMatComLaco.por](https://github.com/StelmoNetto/IPEE/blob/main/2%C2%BA%20assunto/42%20-%20intervMatComLaco.por "42 - intervMatComLaco.por")|Intervalo de uma matriz com laço|
 |[42 - intervMatComRetornoAntecipado.por](https://github.com/StelmoNetto/IPEE/blob/main/2%C2%BA%20assunto/42%20-%20intervMatComRetornoAntecipado.por "42 - intervMatComRetornoAntecipado.por")|Intervalo de uma matriz com retorno antecipado|
+|[42 - intervMatComLaco.por](https://github.com/StelmoNetto/IPEE/blob/main/2%C2%BA%20assunto/42%20-%20intervMatComLaco.por "42 - intervMatComLaco.por")|Intervalo de uma matriz com laço|
+|[42 - intervMatComLacoV2.por](https://github.com/StelmoNetto/IPEE/blob/main/2%C2%BA%20assunto/42%20-%20intervMatComLacoV2.por "42 - intervMatComLacoV2.por")|2ª versão do intervalo de uma matriz com laço|
 |[43 - mudInterv.por](https://github.com/StelmoNetto/IPEE/blob/main/2%C2%BA%20assunto/43%20-%20mudInterv.por "43 - mudInterv.por")|Exibição de matriz com índices variando de 1 até o NL e NC|
