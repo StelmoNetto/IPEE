@@ -12,17 +12,17 @@ programa
 
 		//checando os intervalos para as linhas
 		logico intervaloDecrescenteDasLinhas = intervaloDeIndicesDasLinhas[INDICEDOLIMITEINFERIOR] > intervaloDeIndicesDasLinhas[INDICEDOLIMITESUPERIOR]
-		logico limiteInferiorDaLinhaInvalido = (intervaloDeIndicesDasLinhas[INDICEDOLIMITEINFERIOR] < 0) ou (intervaloDeIndicesDasLinhas[INDICEDOLIMITEINFERIOR] >= NL)
-		logico limiteSuperiorDaLinhaInvalido = (intervaloDeIndicesDasLinhas[INDICEDOLIMITESUPERIOR] < 0) ou (intervaloDeIndicesDasLinhas[INDICEDOLIMITESUPERIOR] >= NL) 
+		logico limiteInferiorDaLinhaForaDosLimites = (intervaloDeIndicesDasLinhas[INDICEDOLIMITEINFERIOR] < 0) ou (intervaloDeIndicesDasLinhas[INDICEDOLIMITEINFERIOR] >= NL)
+		logico limiteSuperiorDaLinhaForaDosLimites = (intervaloDeIndicesDasLinhas[INDICEDOLIMITESUPERIOR] < 0) ou (intervaloDeIndicesDasLinhas[INDICEDOLIMITESUPERIOR] >= NL) 
 
-		logico ehUmIntervaloInvalido = intervaloDecrescenteDasLinhas ou limiteInferiorDaLinhaInvalido ou limiteSuperiorDaLinhaInvalido
+		logico ehUmIntervaloInvalido = intervaloDecrescenteDasLinhas ou limiteInferiorDaLinhaForaDosLimites ou limiteSuperiorDaLinhaForaDosLimites
 
 		//checando os intervalos para as colunas
 		logico intervaloDecrescenteDasColunas = intervaloDeIndicesDasColunas[INDICEDOLIMITEINFERIOR] > intervaloDeIndicesDasColunas[INDICEDOLIMITESUPERIOR]
-		logico limiteInferiorDaColunaInvalido = (intervaloDeIndicesDasColunas[INDICEDOLIMITEINFERIOR] < 0) ou (intervaloDeIndicesDasColunas[INDICEDOLIMITEINFERIOR] >= NC)		
-		logico limiteSuperiorDaColunaInvalido = (intervaloDeIndicesDasColunas[INDICEDOLIMITESUPERIOR] < 0) ou (intervaloDeIndicesDasColunas[INDICEDOLIMITESUPERIOR] >= NC)
+		logico limiteInferiorDaColunaForaDosLimites = (intervaloDeIndicesDasColunas[INDICEDOLIMITEINFERIOR] < 0) ou (intervaloDeIndicesDasColunas[INDICEDOLIMITEINFERIOR] >= NC)		
+		logico limiteSuperiorDaColunaForaDosLimites = (intervaloDeIndicesDasColunas[INDICEDOLIMITESUPERIOR] < 0) ou (intervaloDeIndicesDasColunas[INDICEDOLIMITESUPERIOR] >= NC)
 
-		ehUmIntervaloInvalido = ehUmIntervaloInvalido ou intervaloDecrescenteDasColunas ou limiteInferiorDaColunaInvalido ou limiteSuperiorDaColunaInvalido
+		ehUmIntervaloInvalido = ehUmIntervaloInvalido ou intervaloDecrescenteDasColunas ou limiteInferiorDaColunaForaDosLimites ou limiteSuperiorDaColunaForaDosLimites
 
 		se(ehUmIntervaloInvalido)
 		{
@@ -46,7 +46,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 258; 
+ * @POSICAO-CURSOR = 1360; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
