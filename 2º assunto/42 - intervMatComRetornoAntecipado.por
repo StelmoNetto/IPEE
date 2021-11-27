@@ -4,15 +4,15 @@ programa
 	funcao inicio()
 	{
 		const inteiro NL = 2, NC = 3
-		const inteiro LIMITEINFERIOR = 0
-		const inteiro LIMITESUPERIOR = 1
-		real mat[NL][NC] = {{1.0,2.0,3.0}, 
+		const inteiro INDICEDOLIMITEINFERIOR = 0
+		const inteiro INDICEDOLIMITESUPERIOR = 1
+		real matriz[NL][NC] = {{1.0,2.0,3.0}, 
 						{4.0,5.0,6.0}}
-		inteiro intLin[2] = {0,1}, intCol[] = {1,2}, i,j
+		inteiro intervaloDeIndicesDasLinhas[2] = {0,1}, intervaloDeIndicesDasColunas[] = {1,2}, linha,coluna
 
 		//checando os intervalos para as linhas e colunas
-		logico intervaloValido = (intLin[LIMITEINFERIOR] >= 0 e intLin[LIMITEINFERIOR] < NL) e (intLin[LIMITESUPERIOR] >= 0 e intLin[LIMITESUPERIOR] <= NL - 1) e (intLin[LIMITEINFERIOR] <= intLin[LIMITESUPERIOR])
-		intervaloValido = intervaloValido e (intCol[LIMITEINFERIOR] >= 0 e intCol[LIMITEINFERIOR] <= NC - 1) e (intCol[LIMITESUPERIOR] >= 0 e intCol[LIMITESUPERIOR] <= NC - 1) e (intCol[LIMITEINFERIOR] <= intCol[LIMITESUPERIOR])
+		logico intervaloValido = (intervaloDeIndicesDasLinhas[INDICEDOLIMITEINFERIOR] >= 0 e intervaloDeIndicesDasLinhas[INDICEDOLIMITEINFERIOR] < NL) e (intervaloDeIndicesDasLinhas[INDICEDOLIMITESUPERIOR] >= 0 e intervaloDeIndicesDasLinhas[INDICEDOLIMITESUPERIOR] <= NL - 1) e (intervaloDeIndicesDasLinhas[INDICEDOLIMITEINFERIOR] <= intervaloDeIndicesDasLinhas[INDICEDOLIMITESUPERIOR])
+		intervaloValido = intervaloValido e (intervaloDeIndicesDasColunas[INDICEDOLIMITEINFERIOR] >= 0 e intervaloDeIndicesDasColunas[INDICEDOLIMITEINFERIOR] <= NC - 1) e (intervaloDeIndicesDasColunas[INDICEDOLIMITESUPERIOR] >= 0 e intervaloDeIndicesDasColunas[INDICEDOLIMITESUPERIOR] <= NC - 1) e (intervaloDeIndicesDasColunas[INDICEDOLIMITEINFERIOR] <= intervaloDeIndicesDasColunas[INDICEDOLIMITESUPERIOR])
 
 		logico intervaloInvalido = nao(intervaloValido)
 		se(intervaloInvalido)
@@ -22,11 +22,11 @@ programa
 		}
 		
 		//processamento
-		para(i = intLin[LIMITEINFERIOR]; i <= intLin[LIMITESUPERIOR]; i++)
+		para(linha = intervaloDeIndicesDasLinhas[INDICEDOLIMITEINFERIOR]; linha <= intervaloDeIndicesDasLinhas[INDICEDOLIMITESUPERIOR]; linha++)
 		{
-			para(j = intCol[LIMITEINFERIOR]; j <= intCol[LIMITESUPERIOR]; j++)
+			para(coluna = intervaloDeIndicesDasColunas[INDICEDOLIMITEINFERIOR]; coluna <= intervaloDeIndicesDasColunas[INDICEDOLIMITESUPERIOR]; coluna++)
 			{
-				escreva(mat[i][j]," ")
+				escreva(matriz[linha][coluna]," ")
 			}
 			escreva("\n")
 		}		
@@ -37,7 +37,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1099; 
+ * @POSICAO-CURSOR = 308; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
