@@ -10,13 +10,13 @@ programa
 		real matriz[NL][NC] = {{1.0,2.0,3.0},
 						{4.0,5.0,6.0}}
 		
-		inteiro limiteInferiorDasLinhas = 0
-		inteiro limiteSuperiorDasLinhas = 0
-		inteiro intervaloDeIndicesDasLinhas[] = {limiteInferiorDasLinhas,limiteSuperiorDasLinhas}
+		inteiro primeiraLinhaParaExibicao = 0
+		inteiro ultimaLinhaParaExibicao = 0
+		inteiro intervaloDeIndicesDasLinhas[] = {primeiraLinhaParaExibicao,ultimaLinhaParaExibicao}
 
-		inteiro limiteInferiorDasColunas = 0
-		inteiro limiteSuperiorDasColunas = 0
-		inteiro intervaloDeIndicesDasColunas[] = {limiteInferiorDasColunas,limiteSuperiorDasColunas}
+		inteiro primeiraColunaParaExibicao = 0
+		inteiro ultimaColunaParaExibicao = 0
+		inteiro intervaloDeIndicesDasColunas[] = {primeiraColunaParaExibicao,ultimaColunaParaExibicao}
 		inteiro linha,coluna
 
 		//checando se os intervalos para as linhas e colunas são decrescentes
@@ -50,7 +50,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 644; 
+ * @POSICAO-CURSOR = 441; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
