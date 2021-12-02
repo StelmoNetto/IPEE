@@ -2,30 +2,30 @@ programa
 {
 	funcao inicio()
 	{
-		const inteiro MAXNUMNOTAS = 100
-		inteiro i, n
-		real s = 0.0, media, notas[MAXNUMNOTAS]
+		const inteiro NUMERODENOTASMAXIMO = 100		
+		real somatorioDasNotas = 0.0, media, notas[NUMERODENOTASMAXIMO]
+		inteiro i, numeroDeNotas
 
-		logico numNotasInvalido
+		logico numeroDeNotasInvalido
 		faca
 		{
-			escreva("Entre o número de notas com no máximo de ",MAXNUMNOTAS," notas\n")
-			leia(n)
-			numNotasInvalido = n < 0 ou n > MAXNUMNOTAS
-		}enquanto(numNotasInvalido)
+			escreva("Entre o número de notas com no máximo de ",NUMERODENOTASMAXIMO," notas\n")
+			leia(numeroDeNotas)
+			numeroDeNotasInvalido = numeroDeNotas < 0 ou numeroDeNotas > NUMERODENOTASMAXIMO
+		}enquanto(numeroDeNotasInvalido)
 				
-		escreva("Entre com as ",n," notas\n")
-		para(i = 0; i < n; i++)
+		escreva("Entre com as ",numeroDeNotas," notas\n")
+		para(i = 0; i < numeroDeNotas; i++)
 		{
 			leia(notas[i])
 
-			s+= notas[i] //s = s + notas[i]			
+			somatorioDasNotas+= notas[i] //s = s + notas[i]			
 		}
-		para(i = 0; i < n; i++)
+		para(i = 0; i < numeroDeNotas; i++)
 		{
 			escreva("Nota",i + 1," = ",notas[i],"\n")
 		}
-		media = s/n
+		media = somatorioDasNotas/numeroDeNotas
 		escreva("A média é ",media)
 	}
 }
@@ -34,7 +34,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 242; 
+ * @POSICAO-CURSOR = 154; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

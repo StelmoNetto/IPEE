@@ -6,7 +6,7 @@ programa
 		const inteiro N = 3
 		real vetor[N]
 		inteiro indice
-		logico indiceNegativo, indiceUltrapassaUltimo, indiceInvalido
+		logico indiceInvalido
 		
 		escreva("Entre com os ",N," elementos do vetor\n")
 		para(inteiro i = 0; i < N; i++)
@@ -27,14 +27,14 @@ programa
 			escreva("Entre com uma posição para alteração do vetor entre [0,",N - 1,"]\n")
 			leia(indice)
 
-			indiceNegativo = indice < 0
+			logico indiceNegativo = indice < 0
 
 			se(indiceNegativo)
 			{
 				escreva("O indice é negativo. Forneça outro\n")
 			}
 
-			indiceUltrapassaUltimo = indice > (N - 1)
+			logico indiceUltrapassaUltimo = indice > (N - 1)
 
 			se(indiceUltrapassaUltimo)
 			{
@@ -60,7 +60,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 54; 
+ * @POSICAO-CURSOR = 601; 
  * @PONTOS-DE-PARADA = 48;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

@@ -3,30 +3,30 @@ programa
 	
 	funcao inicio()
 	{
-		real mat[3][2]
+		real matriz[3][2]
 		
 		escreva("Entre com os dois elementos da 1ª linha\n")
-		leia(mat[0][0],mat[0][1])
+		leia(matriz[0][0],matriz[0][1])
 
 		escreva("Entre com os dois elementos da 2ª linha\n")
-		leia(mat[1][0],mat[1][1])
+		leia(matriz[1][0],matriz[1][1])
 
 		escreva("Entre com os dois elementos da 3ª linha\n")
-		leia(mat[2][0],mat[2][1])
+		leia(matriz[2][0],matriz[2][1])
 
 		escreva("Os dois elementos da 1ª linha\n")
-		escreva(mat[0][0]," ", mat[0][1],"\n")
+		escreva(matriz[0][0]," ", matriz[0][1],"\n")
 
 		escreva("Os dois elementos da 2ª linha\n")
-		escreva(mat[1][0]," ", mat[1][1],"\n")
+		escreva(matriz[1][0]," ", matriz[1][1],"\n")
 
 		escreva("Os dois elementos da 3ª linha\n")
-		escreva(mat[2][0]," ", mat[2][1],"\n")
+		escreva(matriz[2][0]," ", matriz[2][1],"\n")
 
 		escreva("Todos os elementos da minha matriz\n")
-		escreva(mat[0][0]," ", mat[0][1],"\n")
-		escreva(mat[1][0]," ", mat[1][1],"\n")
-		escreva(mat[2][0]," ", mat[2][1],"\n")
+		escreva(matriz[0][0]," ", matriz[0][1],"\n")
+		escreva(matriz[1][0]," ", matriz[1][1],"\n")
+		escreva(matriz[2][0]," ", matriz[2][1],"\n")
 		
 	}
 }
@@ -35,7 +35,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 738; 
+ * @POSICAO-CURSOR = 40; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

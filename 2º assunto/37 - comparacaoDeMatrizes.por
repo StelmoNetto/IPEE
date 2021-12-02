@@ -2,35 +2,35 @@ programa
 {
 	funcao inicio()
 	{
-		const inteiro NL = 2, NC = 2
+		const inteiro NUMERODELINHAS = 2, NUMERODECOLUNAS = 2
 		inteiro i, j
-		real mat1[NL][NC], mat2[NL][NC]
+		real matriz1[NUMERODELINHAS][NUMERODECOLUNAS], matriz2[NUMERODELINHAS][NUMERODECOLUNAS]
 		logico saoIguais = verdadeiro
 		
 		escreva("Entre com os valores da matriz 1\n")
-		para(i = 0; i < NL; i++)
+		para(i = 0; i < NUMERODELINHAS; i++)
 		{
-			para(j = 0; j < NC; j++)
+			para(j = 0; j < NUMERODECOLUNAS; j++)
 			{
-				leia(mat1[i][j])
+				leia(matriz1[i][j])
 			}
 		}
 		
 		escreva("Entre com os valores da matriz 2\n")
-		para(i = 0; i < NL; i++)
+		para(i = 0; i < NUMERODELINHAS; i++)
 		{
-			para(j = 0; j < NC; j++)
+			para(j = 0; j < NUMERODECOLUNAS; j++)
 			{
-				leia(mat2[i][j])
+				leia(matriz2[i][j])
 			}
 		}
 		//Comparando os elementos nas posições i,j das duas matrizes:
 		//Se para todo (i = 0, NL - 1; j = 0, NC - 1), mat1[i][j] == mat2[i][j] é verdadeira
-		para(i = 0; i < NL e saoIguais; i++)
+		para(i = 0; i < NUMERODELINHAS e saoIguais; i++)
 		{
-			para(j = 0; j < NC e saoIguais; j++)
+			para(j = 0; j < NUMERODECOLUNAS e saoIguais; j++)
 			{
-				saoIguais = saoIguais e (mat1[i][j] == mat2[i][j])
+				saoIguais = saoIguais e (matriz1[i][j] == matriz2[i][j])
 			}
 		}
 
@@ -49,7 +49,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 701; 
+ * @POSICAO-CURSOR = 151; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

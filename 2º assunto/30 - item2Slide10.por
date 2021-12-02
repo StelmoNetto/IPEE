@@ -6,47 +6,47 @@ programa
 		const inteiro NUMERODELINHAS = 3
 		const inteiro NUMERODECOLUNAS = 2
 		
-		real mat[NUMERODELINHAS][NUMERODECOLUNAS]
-		inteiro l,c
+		real matriz[NUMERODELINHAS][NUMERODECOLUNAS]
+		inteiro linha,coluna
 		
 		escreva("Entre com os elementos da matriz de tamanho: ",NUMERODELINHAS," x ",NUMERODECOLUNAS,"\n")
 		para(inteiro i = 0; i < NUMERODELINHAS; i++)
 		{
 			para(inteiro j = 0; j < NUMERODECOLUNAS; j++)
 			{
-				leia(mat[i][j])
+				leia(matriz[i][j])
 			}
 		}
 
-		logico numDeLinhaInvalida
+		logico indiceDeLinhaInvalido
 		faca
 		{
 			escreva("Entre com a linha - [0,",NUMERODELINHAS - 1, "]\n")
-			leia(l)
-			numDeLinhaInvalida = l < 0 ou l >= NUMERODELINHAS
-			se(numDeLinhaInvalida)
+			leia(linha)
+			indiceDeLinhaInvalido = linha < 0 ou linha >= NUMERODELINHAS
+			se(indiceDeLinhaInvalido)
 			{
 				escreva("Número incorreto na linha\n")
 			}			
 
-		}enquanto(numDeLinhaInvalida)
+		}enquanto(indiceDeLinhaInvalido)
 
-		logico numDeColunaInvalida
+		logico indiceDeColunaInvalido
 		faca
 		{
 			escreva("Entre com a coluna - [0,",NUMERODECOLUNAS - 1,"]\n")
-			leia(c)			
+			leia(coluna)			
 
-			numDeColunaInvalida = c < 0 ou c >= NUMERODECOLUNAS
+			indiceDeColunaInvalido = coluna < 0 ou coluna >= NUMERODECOLUNAS
 
-			se(numDeColunaInvalida)
+			se(indiceDeColunaInvalido)
 			{
 				escreva("Número incorreto na coluna\n")
 			}
-		}enquanto(numDeColunaInvalida)
+		}enquanto(indiceDeColunaInvalido)
 
-		escreva("Entre com o valor do elemento na linha ",l," e coluna ",c,"\n")
-		leia(mat[l][c])
+		escreva("Entre com o valor do elemento na linha ",linha," e coluna ",coluna,"\n")
+		leia(matriz[linha][coluna])
 
 		escreva("Todos os elementos da minha matriz\n")
 		para(inteiro j = 0; j < NUMERODELINHAS; j++)
@@ -54,7 +54,7 @@ programa
 			//escreva("Os dois elementos da ",j + 1," ª linha\n")
 			para(inteiro i = 0; i < NUMERODECOLUNAS; i++)
 			{
-				escreva(mat[j][i]," ")
+				escreva(matriz[j][i]," ")
 			}		
 			escreva("\n")
 		}				
@@ -65,7 +65,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 601; 
+ * @POSICAO-CURSOR = 170; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

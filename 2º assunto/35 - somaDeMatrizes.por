@@ -3,43 +3,43 @@ programa
 	
 	funcao inicio()
 	{
-		const inteiro NL = 2, NC = 2
-		real matA[NL][NC], matB[NL][NC], soma[NL][NC]
+		const inteiro NUMERODELINHAS = 2, NUMERODECOLUNAS = 2
+		real matrizA[NUMERODELINHAS][NUMERODECOLUNAS], matrizB[NUMERODELINHAS][NUMERODECOLUNAS], matrizSoma[NUMERODELINHAS][NUMERODECOLUNAS]
 		inteiro i,j		
 		
-		escreva("Entre com os elementos da matriz A de tamanho ",NL,"x",NC,"\n")
-		para(i = 0; i < NL; i++)
+		escreva("Entre com os elementos da matriz A de tamanho ",NUMERODELINHAS,"x",NUMERODECOLUNAS,"\n")
+		para(i = 0; i < NUMERODELINHAS; i++)
 		{
-			para(j = 0; j < NC; j++)
+			para(j = 0; j < NUMERODECOLUNAS; j++)
 			{
-				leia(matA[i][j])
+				leia(matrizA[i][j])
 			}
 		}
 
-		escreva("Entre com os elementos da matriz B de tamanho ",NL,"x",NC,"\n")
-		para(i = 0; i < NL; i++)
+		escreva("Entre com os elementos da matriz B de tamanho ",NUMERODELINHAS,"x",NUMERODECOLUNAS,"\n")
+		para(i = 0; i < NUMERODELINHAS; i++)
 		{
-			para(j = 0; j < NC; j++)
+			para(j = 0; j < NUMERODECOLUNAS; j++)
 			{
-				leia(matB[i][j])
+				leia(matrizB[i][j])
 			}
 		}	
 			
 		//Processamento da soma
-		para(i = 0; i < NL; i++)
+		para(i = 0; i < NUMERODELINHAS; i++)
 		{
-			para(j = 0; j < NC; j++)
+			para(j = 0; j < NUMERODECOLUNAS; j++)
 			{
-				soma[i][j] = matA[i][j] + matB[i][j]
+				matrizSoma[i][j] = matrizA[i][j] + matrizB[i][j]
 			}
 		}				
 
 		escreva("A soma é: \n")
-		para(i = 0; i < NL; i++)
+		para(i = 0; i < NUMERODELINHAS; i++)
 		{
-			para(j = 0; j < NC; j++)
+			para(j = 0; j < NUMERODECOLUNAS; j++)
 			{				
-				escreva(soma[i][j]," ")
+				escreva(matrizSoma[i][j]," ")
 			}
 			escreva("\n")
 		}						
@@ -50,7 +50,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 605; 
+ * @POSICAO-CURSOR = 180; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

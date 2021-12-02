@@ -2,42 +2,43 @@ programa
 {	
 	funcao inicio()
 	{
-		const inteiro NUMALUNOS = 2, NUMNOTAS = 3
-		real notas[NUMALUNOS][NUMNOTAS], medias[NUMALUNOS]
-		inteiro i,j
+		const inteiro NUMERODEALUNOS = 2, NUMERODENOTAS = 3
+		real notas[NUMERODEALUNOS][NUMERODENOTAS], medias[NUMERODEALUNOS]		
 
-		escreva("Existem ",NUMALUNOS," alunos\n")
-		para(i = 0; i < NUMALUNOS; i++)
+		escreva("Existem ",NUMERODEALUNOS," alunos\n")
+		para(inteiro i_Aluno = 0; i_Aluno < NUMERODEALUNOS; i_Aluno++)
 		{
-			medias[i] = 0.0
-			escreva("Entre com as ",NUMNOTAS," notas do ",i + 1,"º aluno\n")
-			para(j = 0; j < NUMNOTAS; j++) //somando as NUMNOTAS notas dos alunos
+			medias[i_Aluno] = 0.0
+			escreva("Entre com as ",NUMERODENOTAS," notas do ",i_Aluno + 1,"º aluno\n")
+			para(inteiro j_Nota = 0; j_Nota < NUMERODENOTAS; j_Nota++) //somando as NUMNOTAS notas dos alunos
 			{
-				leia(notas[i][j])
-				medias[i]+= notas[i][j] //somando as notas do aluno i
+				leia(notas[i_Aluno][j_Nota])
+				medias[i_Aluno]+= notas[i_Aluno][j_Nota] //somando as notas do aluno i
 			}
-			medias[i] /= NUMNOTAS //medias[i] = medias[i] / NUMNOTAS
+			medias[i_Aluno] /= NUMERODENOTAS //medias[i] = medias[i] / NUMNOTAS
 		}
 		escreva("Os elementos do vetor média são:\n")
-		para(i = 0; i < NUMALUNOS; i++)
+		para(inteiro i_Aluno = 0; i_Aluno < NUMERODEALUNOS; i_Aluno++)
 		{		
-			escreva("Média do ",i + 1," aluno é: ",medias[i],"\n")
+			escreva("Média do ",i_Aluno + 1," aluno é: ",medias[i_Aluno],"\n")
 		}
 
+		inteiro j_Aluno
 		escreva("Entre com a linha (aluno) desejada\n")
-		leia(j)
-		escreva("As suas ",NUMNOTAS," são: \n")
-		para(i = 0; i < NUMNOTAS; i++)
+		leia(j_Aluno)
+		escreva("As suas ",NUMERODENOTAS," são: \n")
+		para(inteiro i_Nota = 0; i_Nota < NUMERODENOTAS; i_Nota++)
 		{
-			escreva(notas[j][i]," ")
+			escreva(notas[j_Aluno][i_Nota]," ")
 		}
 
+		inteiro i_Nota
 		escreva("\nEntre com a coluna (nota) desejada\n")
-		leia(i)
+		leia(i_Nota)
 		
-		para(j = 0; j < NUMALUNOS; j++)
+		para(j_Aluno = 0; j_Aluno < NUMERODEALUNOS; j_Aluno++)
 		{
-			escreva("A nota", i + 1, " do ", j + 1, "º é: ",notas[j][i],"\n")
+			escreva("A nota", i_Nota + 1, " do ", j_Aluno + 1, "º é: ",notas[j_Aluno][i_Nota],"\n")
 		}		
 	}
 }
@@ -46,8 +47,8 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 850; 
- * @PONTOS-DE-PARADA = 35;
+ * @POSICAO-CURSOR = 1201; 
+ * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;

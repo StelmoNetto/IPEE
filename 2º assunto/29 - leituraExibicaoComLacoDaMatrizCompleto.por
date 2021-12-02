@@ -3,7 +3,7 @@ programa
 	
 	funcao inicio()
 	{
-		real mat[3][2]
+		real matriz[3][2]
 		inteiro i,j
 
 		para(j = 0; j < 3; j++)
@@ -11,7 +11,7 @@ programa
 			escreva("Entre com os dois elementos da ",j + 1, "ª linha\n")
 			para(i = 0; i < 2; i++)
 			{
-				leia(mat[j][i])
+				leia(matriz[j][i])
 			}
 		}
 
@@ -20,7 +20,7 @@ programa
 			escreva("Os dois elementos da ",j + 1," ª linha\n")
 			para(i = 0; i < 2; i++)
 			{
-				escreva(mat[j][i]," ")
+				escreva(matriz[j][i]," ")
 			}		
 			escreva("\n")
 		}
@@ -30,7 +30,7 @@ programa
 		{
 			para(i = 0; i < 2; i++)
 			{
-				escreva(mat[j][i]," ")
+				escreva(matriz[j][i]," ")
 			}		
 			escreva("\n")
 		}		
@@ -41,7 +41,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 474; 
+ * @POSICAO-CURSOR = 40; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

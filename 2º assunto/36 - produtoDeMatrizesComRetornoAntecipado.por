@@ -3,54 +3,54 @@ programa
 	
 	funcao inicio()
 	{
-		const inteiro NLA = 2, NCA = 2, NLB = 2, NCB = 2
+		const inteiro NUMERODELINHASDEA = 2, NUMERODECOLUNASDEA = 2, NUMERODELINHASDEB = 2, NUMERODECOLUNASDEB = 2
 
-		se(NCA != NLB)
+		se(NUMERODECOLUNASDEA != NUMERODELINHASDEB)
 		{
 			escreva("O número de colunas de A deve ser igual ao número de linhas de B\n")
 			retorne
 		}
 		
-		real matA[NLA][NCA], matB[NLB][NCB], prod[NLA][NCB]
+		real matrizA[NUMERODELINHASDEA][NUMERODECOLUNASDEA], matrizB[NUMERODELINHASDEB][NUMERODECOLUNASDEB], matrizProduto[NUMERODELINHASDEA][NUMERODECOLUNASDEB]
 		inteiro i,j		
 		
-		escreva("Entre com os elementos da matriz A de tamanho ",NLA,"x",NCA,"\n")
-		para(i = 0; i < NLA; i++)
+		escreva("Entre com os elementos da matriz A de tamanho ",NUMERODELINHASDEA,"x",NUMERODECOLUNASDEA,"\n")
+		para(i = 0; i < NUMERODELINHASDEA; i++)
 		{
-			para(j = 0; j < NCA; j++)
+			para(j = 0; j < NUMERODECOLUNASDEA; j++)
 			{
-				leia(matA[i][j])
+				leia(matrizA[i][j])
 			}
 		}
 
-		escreva("Entre com os elementos da matriz B de tamanho ",NLB,"x",NCB,"\n")
-		para(i = 0; i < NLB; i++)
+		escreva("Entre com os elementos da matriz B de tamanho ",NUMERODELINHASDEB,"x",NUMERODECOLUNASDEB,"\n")
+		para(i = 0; i < NUMERODELINHASDEB; i++)
 		{
-			para(j = 0; j < NCB; j++)
+			para(j = 0; j < NUMERODECOLUNASDEB; j++)
 			{
-				leia(matB[i][j])
+				leia(matrizB[i][j])
 			}
 		}		
 
 		//Processamento do produto
-		para(i = 0; i < NLA; i++)
+		para(i = 0; i < NUMERODELINHASDEA; i++)
 		{
-			para(j = 0; j < NCB; j++)
+			para(j = 0; j < NUMERODECOLUNASDEB; j++)
 			{
-				prod[i][j] = 0.0
-				para(inteiro k = 0; k < NCA; k++)
+				matrizProduto[i][j] = 0.0
+				para(inteiro k = 0; k < NUMERODECOLUNASDEA; k++)
 				{
-					prod[i][j] += matA[i][k] * matB[k][j] //prod[i][j] = prod[i][j] + matA[i][k] * matB[k][j]						
+					matrizProduto[i][j] += matrizA[i][k] * matrizB[k][j] //prod[i][j] = prod[i][j] + matA[i][k] * matB[k][j]						
 				}				
 			}			
 		}
 
 		escreva("O produto é: \n")
-		para(i = 0; i < NLA; i++)
+		para(i = 0; i < NUMERODELINHASDEA; i++)
 		{
-			para(j = 0; j < NCB; j++)
+			para(j = 0; j < NUMERODECOLUNASDEB; j++)
 			{
-				escreva(prod[i][j]," ")
+				escreva(matrizProduto[i][j]," ")
 			}
 			escreva("\n")
 		}		
@@ -61,7 +61,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 894; 
+ * @POSICAO-CURSOR = 395; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

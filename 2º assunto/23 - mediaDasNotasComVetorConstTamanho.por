@@ -2,22 +2,22 @@ programa
 {
 	funcao inicio()
 	{
-		const inteiro NUMDENOTAS = 3
+		const inteiro NUMERODENOTAS = 3		
+		real somatorioDasNotas = 0.0, media, notas[NUMERODENOTAS]
 		inteiro i
-		real s = 0.0, media, notas[NUMDENOTAS]
 
-		escreva("Entre com as ",NUMDENOTAS," notas\n")
-		para(i = 0; i < NUMDENOTAS; i++)
+		escreva("Entre com as ",NUMERODENOTAS," notas\n")
+		para(i = 0; i < NUMERODENOTAS; i++)
 		{
 			leia(notas[i])
 
-			s+= notas[i] //s = s + notas[i]			
+			somatorioDasNotas+= notas[i] //s = s + notas[i]			
 		}
-		para(i = 0; i < NUMDENOTAS; i++)
+		para(i = 0; i < NUMERODENOTAS; i++)
 		{
 			escreva("Nota",i + 1," = ",notas[i],"\n")
 		}
-		media = s/NUMDENOTAS
+		media = somatorioDasNotas/NUMERODENOTAS
 		escreva("A média é ",media)
 	}
 }
@@ -26,7 +26,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 331; 
+ * @POSICAO-CURSOR = 74; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

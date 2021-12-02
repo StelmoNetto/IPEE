@@ -4,60 +4,61 @@ programa
 	
 	funcao inicio()
 	{
-		const inteiro NMAX = 100
-		real vetor[NMAX], soma = 0.0, modulo
-		inteiro i, numElem
-		logico ultrapassouMaximo, negativoOuNulo
+		const inteiro NUMEROMAXIMODEELEMENTOS = 100
+		real vetor[NUMEROMAXIMODEELEMENTOS], somatorio = 0.0, moduloDoVetor
+		inteiro i, numeroDeElementos
+		logico numeroDeElementosInvalido
 		
-		escreva("Esse programa calcula o módulo de um vetor de dimensão máxima igual a ", NMAX, " e determina o vetor unitário\n")
+		escreva("Esse programa calcula o módulo de um vetor de dimensão máxima igual a ", NUMEROMAXIMODEELEMENTOS, " e determina o vetor unitário\n")
 
 		faca
 		{
 			escreva("Forneça o número de elementos do vetor\n")
-			leia(numElem)
+			leia(numeroDeElementos)
 
-			ultrapassouMaximo = numElem > NMAX
+			logico numeroDeElementosUltrapassouMaximo = numeroDeElementos > NUMEROMAXIMODEELEMENTOS
 
-			se(ultrapassouMaximo)
+			se(numeroDeElementosUltrapassouMaximo)
 			{
-				escreva("Número de elementos ultrapassou o máximo de ", NMAX," elementos permitido\n")
+				escreva("Número de elementos ultrapassou o máximo de ", NUMEROMAXIMODEELEMENTOS," elementos permitido\n")
 			}
 
-			negativoOuNulo = numElem <= 0
-			se(negativoOuNulo)
+			logico numeroDeElementosNegativoOuNulo = numeroDeElementos <= 0
+			se(numeroDeElementosNegativoOuNulo)
 			{
 				escreva("Número de elementos é nulo ou negativo\n")
 			}
+
+			numeroDeElementosInvalido = numeroDeElementosUltrapassouMaximo ou numeroDeElementosNegativoOuNulo
 			
-		}enquanto(ultrapassouMaximo ou negativoOuNulo)
+		}enquanto(numeroDeElementosInvalido)
 		
-		escreva("Entre com os ", numElem, " elementos do vetor\n")
-		para(i = 0; i < numElem; i++)
+		escreva("Entre com os ", numeroDeElementos, " elementos do vetor\n")
+		para(i = 0; i < numeroDeElementos; i++)
 		{
 			escreva("Forneça o ",i + 1, "º elemento\n")
 			leia(vetor[i])
 		}
 
 		//Soma dos quadrados das componentes do vetor
-		para(i = 0; i < numElem; i++)
+		para(i = 0; i < numeroDeElementos; i++)
 		{
-			soma+= vetor[i] * vetor[i]
+			somatorio+= vetor[i] * vetor[i]
 		}		
 
-		modulo = mt.raiz(soma,2.0)
+		moduloDoVetor = mt.raiz(somatorio,2.0)
 
-		escreva("O módulo do vetor de ",numElem, " elementos é igual a ", mt.arredondar(modulo, 4),"\n")
+		escreva("O módulo do vetor de ",numeroDeElementos, " elementos é igual a ", mt.arredondar(moduloDoVetor, 4),"\n")
 
 		//Cálculo do vetor unitário
-		para(i = 0; i < numElem e modulo > 0.0; i++)
-		{
-			//vetor[i] = vetor[i] / modulo
-			vetor[i] /=  modulo
+		para(i = 0; i < numeroDeElementos e moduloDoVetor > 0.0; i++)
+		{			
+			vetor[i] /=  moduloDoVetor //vetor[i] = vetor[i] / moduloDoVetor
 		}
 
 		//Exibição do vetor unitário
-		escreva("As ", numElem, " componentes do vetor unitário são \n")
-		para(i = 0; i < numElem; i++)
+		escreva("As ", numeroDeElementos, " componentes do vetor unitário são \n")
+		para(i = 0; i < numeroDeElementos; i++)
 		{
 			escreva(mt.arredondar(vetor[i], 4)," ")
 		}				
@@ -68,7 +69,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1412; 
+ * @POSICAO-CURSOR = 1719; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
