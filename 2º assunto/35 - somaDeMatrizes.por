@@ -34,7 +34,7 @@ programa
 			}
 		}				
 
-		escreva("A soma é: \n")
+		escreva("A matriz soma A + B é: \n")
 		para(i = 0; i < NUMERODELINHAS; i++)
 		{
 			para(j = 0; j < NUMERODECOLUNAS; j++)
@@ -50,7 +50,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 180; 
+ * @POSICAO-CURSOR = 906; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

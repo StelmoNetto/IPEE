@@ -40,12 +40,12 @@ programa
 				matrizProduto[i][j] = 0.0
 				para(inteiro k = 0; k < NUMERODECOLUNASDEA; k++)
 				{
-					matrizProduto[i][j] += matrizA[i][k] * matrizB[k][j] //prod[i][j] = prod[i][j] + matA[i][k] * matB[k][j]						
+					matrizProduto[i][j] += matrizA[i][k] * matrizB[k][j] //matrizProduto[i][j] = matrizProduto[i][j] + matA[i][k] * matB[k][j]						
 				}				
 			}			
 		}
 
-		escreva("O produto é: \n")
+		escreva("A matriz produto A * B é: \n")
 		para(i = 0; i < NUMERODELINHASDEA; i++)
 		{
 			para(j = 0; j < NUMERODECOLUNASDEB; j++)
@@ -61,7 +61,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 395; 
+ * @POSICAO-CURSOR = 1247; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
