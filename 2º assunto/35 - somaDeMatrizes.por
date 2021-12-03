@@ -4,7 +4,8 @@ programa
 	funcao inicio()
 	{
 		const inteiro NUMERODELINHAS = 2, NUMERODECOLUNAS = 2
-		real matrizA[NUMERODELINHAS][NUMERODECOLUNAS], matrizB[NUMERODELINHAS][NUMERODECOLUNAS], matrizSoma[NUMERODELINHAS][NUMERODECOLUNAS]
+		real matrizA[NUMERODELINHAS][NUMERODECOLUNAS], matrizB[NUMERODELINHAS][NUMERODECOLUNAS]
+		real matrizSoma[NUMERODELINHAS][NUMERODECOLUNAS]
 		inteiro i,j		
 		
 		escreva("Entre com os elementos da matriz A de tamanho ",NUMERODELINHAS,"x",NUMERODECOLUNAS,"\n")
@@ -50,7 +51,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 906; 
+ * @POSICAO-CURSOR = 145; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

@@ -11,7 +11,8 @@ programa
 			retorne
 		}
 		
-		real matrizA[NUMERODELINHASDEA][NUMERODECOLUNASDEA], matrizB[NUMERODELINHASDEB][NUMERODECOLUNASDEB], matrizProduto[NUMERODELINHASDEA][NUMERODECOLUNASDEB]
+		real matrizA[NUMERODELINHASDEA][NUMERODECOLUNASDEA], matrizB[NUMERODELINHASDEB][NUMERODECOLUNASDEB]
+		real matrizProduto[NUMERODELINHASDEA][NUMERODECOLUNASDEB]
 		inteiro i,j		
 		
 		escreva("Entre com os elementos da matriz A de tamanho ",NUMERODELINHASDEA,"x",NUMERODECOLUNASDEA,"\n")
@@ -61,7 +62,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1247; 
+ * @POSICAO-CURSOR = 401; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
