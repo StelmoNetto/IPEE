@@ -1,34 +1,32 @@
 programa
 {
-	inclua biblioteca Matematica --> m
-	
-	funcao calcSomatoria(real& x) //isso não é indicado - referência é apenas para saída
+	funcao fatorial(inteiro n,inteiro& fat)
 	{
-		real somatorio = 0.0, sinal = 1.0
-
-		para(inteiro t = 25; t >= 1; t--)
+		inteiro i
+		fat = 1
+		para(i = 2; i <= n; i++)
 		{
-			somatorio+= sinal * m.potencia(x, t) / t
-			sinal*= -1
+			fat*= i //fat = fat * i
 		}
-		x = somatorio
 	}
 	
 	funcao inicio()
 	{
-		real x
-		escreva("Entre com o valor de x\n")
-		leia(x)
-		calcSomatoria(x)
-		escreva("A somatoria é ", x)
+		inteiro numero, valorDoFatorial = 1
+		escreva("Calcula o fatorial de um número\n")
+		escreva("Entre com um número\n")
+		leia(numero)
+		fatorial(numero,valorDoFatorial)
+		escreva("O valor do fatorial é: ",valorDoFatorial,"\n")
 	}
 }
+
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 145; 
+ * @POSICAO-CURSOR = 301; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
