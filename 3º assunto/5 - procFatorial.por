@@ -7,7 +7,7 @@ programa
 		{
 			fat*= i //fat = fat * i
 		}
-		escreva("O valor do fatorial é: ",fat,"\n")
+		escreva("O resultado de ",n,"! = ",fat,"\n")
 	}
 	
 	funcao inicio()
@@ -24,7 +24,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 170; 
+ * @POSICAO-CURSOR = 171; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
