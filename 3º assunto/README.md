@@ -12,6 +12,7 @@ Os códigos fontes do *Portugol Studio* possuem a extensão `.por`. Esses estão
 |[3 - procMostraNumMesmaPropriedade.por](https://github.com/StelmoNetto/IPEE/blob/main/3%C2%BA%20assunto/3%20-%20procMostraNumMesmaPropriedade.por "3 - procMostraNumMesmaPropriedade.por")|Mostra números com mesma propriedade|
 |[4 - procTrocaValComVarGlobais.por](https://github.com/StelmoNetto/IPEE/blob/main/3%C2%BA%20assunto/4%20-%20procTrocaValComVarGlobais.por "4 - procTrocaValComVarGlobais.por")|Troca valores de variáveis globais|
 |[5 - procFatorial.por](https://github.com/StelmoNetto/IPEE/blob/main/3%C2%BA%20assunto/5%20-%20procFatorial.por "5 - procFatorial.por")|Sub-rotina Fatorial|
+|[5 - procedimentoExibeSomaDeParametros.por](https://github.com/StelmoNetto/IPEE/blob/main/3%C2%BA%20assunto/5%20-%20procedimentoExibeSomaDeParametros.por "5 - procedimentoExibeSomaDeParametros.por")|Exibe a soma dos parâmetros|
 |[6 - procCalcSomatoriaDeX.por](https://github.com/StelmoNetto/IPEE/blob/main/3%C2%BA%20assunto/6%20-%20procCalcSomatoriaDeX.por "6 - procCalcSomatoriaDeX.por")|Calcula somatório de X|
 |[7 - procCalcEnergiaConsumida.por](https://github.com/StelmoNetto/IPEE/blob/main/3%C2%BA%20assunto/7%20-%20procCalcEnergiaConsumida.por "7 - procCalcEnergiaConsumida.por")|Calcula energia consumida|
 |[8 - exibeBinario.por](https://github.com/StelmoNetto/IPEE/blob/main/3%C2%BA%20assunto/8%20-%20exibeBinario.por "8 - exibeBinario.por")|Exibe os bit de um inteiro|
