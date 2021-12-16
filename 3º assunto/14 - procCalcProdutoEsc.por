@@ -1,44 +1,45 @@
 programa
 {
-	funcao lerVetor(real v[], inteiro tam)
+	funcao lerVetor(real vetor[], inteiro tamanho)
 	{
-		para(inteiro i = 0; i < tam; i++)
+		para(inteiro i = 0; i < tamanho; i++)
 		{
-			leia(v[i])
+			leia(vetor[i])
 		}
 	}
 
-	funcao escreverVetor(real v[], inteiro tam)
+	funcao escreverVetor(real vetor[], inteiro tamanho)
 	{
-		para(inteiro i = 0; i < tam; i++)
+		para(inteiro i = 0; i < tamanho; i++)
 		{
-			escreva(v[i]," ")
+			escreva(vetor[i]," ")
 		}
 		escreva("\n")
 	}
 
-	funcao procProdEscalar(real v1[], real v2[], inteiro n, real& prod)
+	funcao calcularProdutoEscalar(real vetor1[], real vetor2[], inteiro tamanho, real& produtoEscalar)
 	{
-		prod = 0.0
-		para(inteiro i = 0; i < n; i++)
+		produtoEscalar = 0.0
+		para(inteiro i = 0; i < tamanho; i++)
 		{
-			prod+= v1[i] * v2[i]
+			produtoEscalar+= vetor1[i] * vetor2[i]
 		}
 	}
 	
 	funcao inicio()
 	{
-		const inteiro NUMELEM = 3
-		real vet1[NUMELEM], vet2[NUMELEM]
-		escreva("Entre com os ",NUMELEM," elementos do vetor 1\n")
-		lerVetor(vet1,NUMELEM)
-		escreva("Entre com os ",NUMELEM," elementos do vetor 2\n")
-		lerVetor(vet2,NUMELEM)
+		const inteiro NUMERODEELEMENTOS = 3
+		real vetor1[NUMERODEELEMENTOS], vetor2[NUMERODEELEMENTOS]
+		
+		escreva("Entre com os ",NUMERODEELEMENTOS," elementos do vetor 1\n")
+		lerVetor(vetor1,NUMERODEELEMENTOS)
+		
+		escreva("Entre com os ",NUMERODEELEMENTOS," elementos do vetor 2\n")
+		lerVetor(vetor2,NUMERODEELEMENTOS)
 
-		real produtoEsc = 0.0
-		procProdEscalar(vet1,vet2,NUMELEM,produtoEsc)
-		escreva("O produto escalar é ",produtoEsc)
-		//escreverVetor(v1,numElem)
+		real produtoEscalar = 0.0
+		calcularProdutoEscalar(vetor1,vetor2,NUMERODEELEMENTOS,produtoEscalar)
+		escreva("O produto escalar é ",produtoEscalar)		
 	}
 }
 
@@ -47,7 +48,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 441; 
+ * @POSICAO-CURSOR = 365; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

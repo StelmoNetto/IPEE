@@ -47,16 +47,16 @@ programa
 	
 	funcao inicio()
 	{
-		const inteiro NL = 2, NC = 3
-		real matriz[NL][NC] = {{3.4, 1.2, 5.3}, {1.2, 5.1, 5.3}}, valorProcurado
-		inteiro localizacoesDosEncontrados[NL * NC][2] //coluna 0 para índice de linha e 1 para índice coluna
+		const inteiro NUMERODELINHAS = 2, NUMERODECOLUNAS = 3
+		real matriz[NUMERODELINHAS][NUMERODECOLUNAS] = {{3.4, 1.2, 5.3}, {1.2, 5.1, 5.3}}, valorProcurado
+		inteiro localizacoesDosEncontrados[NUMERODELINHAS * NUMERODECOLUNAS][2] //coluna 0 para índice de linha e 1 para índice coluna
 
 		escreva("Entre com o valor a ser procurado na matriz\n")
 		leia(valorProcurado)
 
-		zerarMatrizInteira(localizacoesDosEncontrados,NL * NC,2)
+		zerarMatrizInteira(localizacoesDosEncontrados,NUMERODELINHAS * NUMERODECOLUNAS,2)
 
-		inteiro quantidadeDeOcorrencias = buscarLocaisDaOcorrenciaDeUmValor(valorProcurado,matriz,NL,NC,localizacoesDosEncontrados)
+		inteiro quantidadeDeOcorrencias = buscarLocaisDaOcorrenciaDeUmValor(valorProcurado,matriz,NUMERODELINHAS,NUMERODECOLUNAS,localizacoesDosEncontrados)
 
 		logico algumElementoEncontrado = quantidadeDeOcorrencias != 0
 		se(algumElementoEncontrado)
@@ -75,7 +75,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1260; 
+ * @POSICAO-CURSOR = 1222; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
