@@ -5,15 +5,15 @@ programa
 	//Precisa de uma entrada: x
 	funcao calcSomatoria(real x)
 	{
-		real soma = 0.0, sinal = 1.0
+		real somatorio = 0.0, sinal = 1.0
 
-		para(inteiro t = 25; t >= 1; t--)
+		para(real t = 25.0; t >= 1.0; t--)
 		{
-			soma+= sinal * m.potencia(x, t) / t
+			somatorio+= sinal * m.potencia(x, t) / t
 			sinal*= -1 //sinal = sinal * (-1)
 		}
-		//Confinado na sub-rotina. Ninguém mais usa esse resultado
-		escreva("O resultado é ", soma)
+		//Confinado na sub-rotina. Ninguém mais pode usar esse resultado
+		escreva("O resultado é ", somatorio)
 	}
 	
 	funcao inicio()
@@ -29,7 +29,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 257; 
+ * @POSICAO-CURSOR = 324; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

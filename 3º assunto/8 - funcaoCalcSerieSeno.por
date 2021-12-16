@@ -12,18 +12,18 @@ programa
 		retorne fat
 	}	
 
-	funcao real seno(real x, inteiro n)
+	funcao real seno(real anguloEmRadianos, inteiro numeroDeTermos)
 	{
-		real soma = 0.0, sinal = 1.0
+		real somatorio = 0.0, sinal = 1.0
 
-		para(real t = 0.0; t <= n; t++)
+		para(real t = 0.0; t <= numeroDeTermos; t++)
 		{
 			//escreva("Valor de t ",t, " O sinal é ", sinal, "\n")
-			real aux = 2 * t + 1
-			soma+= sinal * mt.potencia(x, aux) / fatorial(aux)
+			real denominador2tMais1 = 2 * t + 1
+			somatorio+= sinal * mt.potencia(anguloEmRadianos, denominador2tMais1) / fatorial(denominador2tMais1)
 			sinal*= -1 //sinal = sinal * (-1)
 		}
-		retorne soma
+		retorne somatorio
 	}
 	
 	funcao inicio()
@@ -32,7 +32,7 @@ programa
 		inteiro n = 4
 		real x = PI/2 //radianos
 		escreva("O seno(x = ", x,") é : ",seno(x,n), "\n")
-		escreva("O erro é de:	 ", mt.valor_absoluto(seno(x,n) - mt.seno(x)))
+		escreva("O erro entre o seno(x) calculado e o da biblioteca é = ", mt.valor_absoluto(seno(x,n) - mt.seno(x)))
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -40,7 +40,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 595; 
+ * @POSICAO-CURSOR = 827; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
