@@ -2,9 +2,10 @@ programa
 {
 	funcao procedimentoDeCalculoDaEnergiaEmkWh(real potenciaDoAparelho, real tempoDeUsoEmHoras, inteiro numeroDeDiasDeUso)
 	{
-		escreva("A energia consumida por um aparelho de ",potenciaDoAparelho, " W de potência ")
-		escreva("em ", numeroDeDiasDeUso, " dias e ",tempoDeUsoEmHoras," horas de uso é: ")
-		//escreva(potencia * horas * dias," Wh\n")
+		escreva("Um aparelho de ",potenciaDoAparelho, " W de potência ")
+		escreva("utilizado em ", numeroDeDiasDeUso, " dias e por ",tempoDeUsoEmHoras," horas de uso\n")
+		escreva("Consome a energia de: ") 
+		//escreva(potenciaDoAparelho * tempoDeUsoEmHoras * numeroDeDiasDeUso," Wh\n")
 		escreva(potenciaDoAparelho * tempoDeUsoEmHoras * numeroDeDiasDeUso / 1000.0," kWh\n")
 	}
 	
@@ -21,7 +22,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 85; 
+ * @POSICAO-CURSOR = 10; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
