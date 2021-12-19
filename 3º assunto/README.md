@@ -19,7 +19,7 @@ Os códigos fontes do *Portugol Studio* possuem a extensão `.por`. Esses estão
 |[8 - exibeIntervaloReal.por](https://github.com/StelmoNetto/IPEE/blob/main/3%C2%BA%20assunto/8%20-%20exibeIntervaloReal.por "8 - exibeIntervaloReal.por")|Exibe valores dentro de um intervalo|
 |[8 - funcaoFatorial.por](https://github.com/StelmoNetto/IPEE/blob/main/3%C2%BA%20assunto/8%20-%20funcaoFatorial.por "8 - funcaoFatorial.por")|Calculo fatorial usando função|
 |[8 - funcaoCalcSerieSeno.por](https://github.com/StelmoNetto/IPEE/blob/main/3%C2%BA%20assunto/8%20-%20funcaoCalcSerieSeno.por "8 - funcaoCalcSerieSeno.por")|Função calcula seno pela série|
-|[9 - funcaoCalcEnergia.por](https://github.com/StelmoNetto/IPEE/blob/main/3%C2%BA%20assunto/9%20-%20funcaoCalcEnergia.por "9 - funcaoCalcEnergia.por")|Função calcula energia em W/h|
+|[9 - funcaoCalcEnergia.por](https://github.com/StelmoNetto/IPEE/blob/main/3%C2%BA%20assunto/9%20-%20funcaoCalcEnergia.por "9 - funcaoCalcEnergia.por")|Função calcula energia em kWh|
 |[9 - praticaDeManipulacaoDeBitsComFuncoes.por](https://github.com/StelmoNetto/IPEE/blob/main/3%C2%BA%20assunto/9%20-%20praticaDeManipulacaoDeBitsComFuncoes.por "9 - praticaDeManipulacaoDeBitsComFuncoes.por")|Prática de manipulação de bits com funções|
 |[9 - procedimentoFatorialComReferencia.por](https://github.com/StelmoNetto/IPEE/blob/main/3%C2%BA%20assunto/9%20-%20procedimentoFatorialComReferencia.por "9 - procedimentoFatorialComReferencia.por")|Procedimento fatorial com referência|
 |[10 - procCalcSomatoriaDeXComRef.por](https://github.com/StelmoNetto/IPEE/blob/main/3%C2%BA%20assunto/10%20-%20procCalcSomatoriaDeXComRef.por "10 - procCalcSomatoriaDeXComRef.por")|Procedimento que calcula somatório de X por referência|
