@@ -4,7 +4,9 @@ programa
 	{
 		se (n >= 10)
 		{
+			escreva("n antes da chamada: ",n,"\n")
 			escreveDigitosNaLinha(n / 10)
+			escreva("n após a chamada: ",n,"\n")
 		}
 		escreva(n % 10,"\n")
 	}
@@ -19,7 +21,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 133; 
+ * @POSICAO-CURSOR = 274; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = {n, 3, 38, 1};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
