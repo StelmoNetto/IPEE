@@ -1,12 +1,15 @@
 programa
-{
-	inclua biblioteca Matematica --> Mt
-		
+{	
+	//Evita-se, o máximo possível, múltiplos retornos
 	funcao real modulo(real x)
 	{
-		real moduloDeX = Mt.raiz(x * x, 2.0)
-		retorne moduloDeX
-	}	
+		se(x < 0)
+		{
+			x = -x
+		}
+		
+		retorne x	
+	}
 	
 	funcao inicio()
 	{
@@ -20,7 +23,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 260; 
+ * @POSICAO-CURSOR = 142; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
