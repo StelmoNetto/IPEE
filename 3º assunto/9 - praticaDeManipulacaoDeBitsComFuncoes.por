@@ -38,8 +38,8 @@ programa
 				escreva(lsbSelecionado)
 
 				logico posicaoMultiplaDoNibble = (posicaoDeSelecaoDoBit % NIBBLE) == 0
-				logico naoehPrimeiraPosicao = posicaoDeSelecaoDoBit != 0
-				logico colocaUmEspaco = posicaoMultiplaDoNibble e naoehPrimeiraPosicao
+				logico naoEhPrimeiraPosicao = posicaoDeSelecaoDoBit != 0
+				logico colocaUmEspaco = posicaoMultiplaDoNibble e naoEhPrimeiraPosicao
 				se(colocaUmEspaco)
 				{
 					escreva(" ")
@@ -96,7 +96,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 618; 
+ * @POSICAO-CURSOR = 1157; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
