@@ -36,17 +36,60 @@ programa
 		logico ehPotDe2 = naoNulo e temMaisDeUmBitAtivo
 		retorne ehPotDe2
 	}		
+
+	funcao exibirBinario(inteiro numero)
+	{
+		const inteiro NIBBLE = 4		
+		const inteiro NUMERODEBITS = 32
+		const inteiro ATIVO = 1
+
+		logico iniciarExibicao = falso
+		
+		inteiro posicaoDeSelecaoDoBit = NUMERODEBITS - 1
+		faca
+		{	
+			inteiro lsbSelecionado = isolaNesimoBit(numero,posicaoDeSelecaoDoBit)
+			se(nao iniciarExibicao)
+			{
+				iniciarExibicao = lsbSelecionado == ATIVO
+			}
+			
+			se(iniciarExibicao)
+			{
+				escreva(lsbSelecionado)
+
+				logico posicaoMultiplaDoNibble = (posicaoDeSelecaoDoBit % NIBBLE) == 0
+				logico naoEhPrimeiraPosicao = posicaoDeSelecaoDoBit != 0
+				logico colocaUmEspaco = posicaoMultiplaDoNibble e naoEhPrimeiraPosicao
+				se(colocaUmEspaco)
+				{
+					escreva(" ")
+				}							
+			}
+			posicaoDeSelecaoDoBit--
+		}enquanto(posicaoDeSelecaoDoBit >= 0)		
+	}
+
+	funcao saidaBinaria(inteiro numero)
+	{
+		escreva("Binário do número = ",numero," é:\n")
+		exibirBinario(numero)
+		escreva("\n")
+	}	
 	
 	funcao inicio()
 	{
-		/*limpaBitAtivoMaisDireita()
-		ativaTodosOsBits()		
-		isolaNesimoBit()
-		limpaNesimoBit()
-		ativaNesimoBit()
-		alternaNesimoBit()
-		mudaNesimoBitParaVal()
-		ehPotenciaDe2()*/
+		escreva(" Entrada:\n")
+		inteiro numero = 10 //0000...1010b
+		saidaBinaria(numero)
+
+		escreva("\n Limpeza do bit ativo mais à direita:\n")		
+		limpaBitAtivoMaisDireita(numero)
+		saidaBinaria(numero)
+
+		escreva("\n Ativação de todos os bits:\n")		
+		ativaTodosOsBits(numero)
+		saidaBinaria(numero)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -54,7 +97,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 808; 
+ * @POSICAO-CURSOR = 1773; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
