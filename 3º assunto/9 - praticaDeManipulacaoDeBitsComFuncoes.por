@@ -27,8 +27,6 @@ programa
 		inteiro posicaoSelecionadaDoBit = NUMERODEBITS - 1
 		faca
 		{	
-			//inteiro bitDaPosicaoSelecionadaNoLSB = numero >> posicaoSelecionadaDoBit
-			//inteiro lsbSelecionado = bitDaPosicaoSelecionadaNoLSB & LSB	
 			inteiro lsbSelecionado = isolaNesimoBit(numero,posicaoSelecionadaDoBit)
 			se(nao iniciarExibicao)
 			{
@@ -98,8 +96,8 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 2393; 
- * @PONTOS-DE-PARADA = 84, 93;
+ * @POSICAO-CURSOR = 673; 
+ * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
