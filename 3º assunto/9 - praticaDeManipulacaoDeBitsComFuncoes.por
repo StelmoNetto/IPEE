@@ -56,7 +56,7 @@ programa
 		escreva("\n")
 	}
 
-	funcao saidaDoProblema(inteiro numero, logico umUnicoBitAtivo)
+	funcao saidaDoProblemaEhPotenciaDe2(inteiro numero, logico umUnicoBitAtivo)
 	{
 		escreva("numero = ", numero, "(")
 		exibirBinario(numero)
@@ -81,14 +81,14 @@ programa
 		
 		logico umUnicoBitAtivo = ehPotenciaDe2(numero)		
 		//escreva("numero = ", numero, " tem um único bit ativo? = ",umUnicoBitAtivo,"\n")
-		saidaDoProblema(numero,umUnicoBitAtivo)
+		saidaDoProblemaEhPotenciaDe2(numero,umUnicoBitAtivo)
 		
 		escreva("\n")
 
 		numero = 8 //0000...1000b		
 		umUnicoBitAtivo = ehPotenciaDe2(numero)		
 		//escreva("numero = ", numero, " tem um único bit ativo? = ",umUnicoBitAtivo,"\n")
-		saidaDoProblema(numero,umUnicoBitAtivo)
+		saidaDoProblemaEhPotenciaDe2(numero,umUnicoBitAtivo)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -96,7 +96,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1623; 
+ * @POSICAO-CURSOR = 1378; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
