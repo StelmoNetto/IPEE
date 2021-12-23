@@ -24,10 +24,10 @@ programa
 
 		logico iniciarExibicao = falso
 		
-		inteiro posicaoSelecionadaDoBit = NUMERODEBITS - 1
+		inteiro posicaoDeSelecaoDoBit = NUMERODEBITS - 1
 		faca
 		{	
-			inteiro lsbSelecionado = isolaNesimoBit(numero,posicaoSelecionadaDoBit)
+			inteiro lsbSelecionado = isolaNesimoBit(numero,posicaoDeSelecaoDoBit)
 			se(nao iniciarExibicao)
 			{
 				iniciarExibicao = lsbSelecionado == ATIVO
@@ -37,16 +37,16 @@ programa
 			{
 				escreva(lsbSelecionado)
 
-				logico posicaoMultiplaDoNibble = (posicaoSelecionadaDoBit % NIBBLE) == 0
-				logico naoehPrimeiraPosicao = posicaoSelecionadaDoBit != 0
+				logico posicaoMultiplaDoNibble = (posicaoDeSelecaoDoBit % NIBBLE) == 0
+				logico naoehPrimeiraPosicao = posicaoDeSelecaoDoBit != 0
 				logico colocaUmEspaco = posicaoMultiplaDoNibble e naoehPrimeiraPosicao
 				se(colocaUmEspaco)
 				{
 					escreva(" ")
 				}							
 			}
-			posicaoSelecionadaDoBit--
-		}enquanto(posicaoSelecionadaDoBit >= 0)		
+			posicaoDeSelecaoDoBit--
+		}enquanto(posicaoDeSelecaoDoBit >= 0)		
 	}
 
 	funcao saidaBinaria(inteiro numero)
@@ -96,7 +96,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 673; 
+ * @POSICAO-CURSOR = 618; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
