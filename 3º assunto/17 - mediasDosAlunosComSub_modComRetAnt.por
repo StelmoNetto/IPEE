@@ -73,7 +73,7 @@ programa
 		retorne media
 	}
 
-	funcao calculaAsMediasDosAlunos(real notas[][], inteiro numeroDeAlunos, inteiro numeroDeNotas, real notasDeUmAluno[], real mediasCalculadas[])
+	funcao calcularMediasDosAlunos(real notas[][], inteiro numeroDeAlunos, inteiro numeroDeNotas, real notasDeUmAluno[], real mediasCalculadas[])
 	{
 		para(inteiro i = 0; i < numeroDeAlunos; i++)
 		{
@@ -99,7 +99,7 @@ programa
 		//escreva("Entre com as ", NUMERODENOTAS, " notas dos ",NUMERODEALUNOS, " alunos\n")
 		//lerMatriz(notas,NUMERODEALUNOS,NUMERODENOTAS)
 		//lerMatrizComMensagemEmCadaLinha(notas,NUMERODEALUNOS,NUMERODENOTAS,"As notas do aluno ")
-		calculaAsMediasDosAlunos(notas,NUMERODEALUNOS,NUMERODENOTAS,notasDeUmAluno,medias)
+		calcularMediasDosAlunos(notas,NUMERODEALUNOS,NUMERODENOTAS,notasDeUmAluno,medias)
 		escreva("O vetor com as médias dos alunos ",NUMERODEALUNOS," alunos:\n")
 		escreverVetor(medias,NUMERODEALUNOS)
 	}
@@ -109,7 +109,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1560; 
+ * @POSICAO-CURSOR = 1967; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
