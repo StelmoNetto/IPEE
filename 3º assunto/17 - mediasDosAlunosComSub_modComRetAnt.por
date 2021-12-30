@@ -40,15 +40,6 @@ programa
 	
 	funcao obterVetorLinhaDaMatriz(real matriz[][], inteiro numeroDeLinhas, inteiro numeroDeColunas, inteiro linhaSelecionada, real vetorLinha[])
 	{
-		/*logico linhaValida = linhaSelecionada >= 0 e linhaSelecionada < numeroDeLinhas
-		se(linhaValida)
-		{
-			para(inteiro j = 0; j < numeroDeColunas; j++)
-			{
-				vetorLinha[j] = matriz[linhaSelecionada][j]
-			}
-		}*/
-
 		logico linhaInvalida = linhaSelecionada < 0 ou linhaSelecionada >= numeroDeLinhas
 		se(linhaInvalida)
 		{
@@ -69,16 +60,17 @@ programa
 		{
 			somatorioDosElementos+= vetor[j]
 		}
+		
 		real media = somatorioDosElementos / numeroDeElementos
 		retorne media
 	}
 
 	funcao calcularMediasDosAlunos(real notas[][], inteiro numeroDeAlunos, inteiro numeroDeNotas, real notasDeUmAluno[], real mediasCalculadas[])
 	{
-		para(inteiro i = 0; i < numeroDeAlunos; i++)
+		para(inteiro aluno_i = 0; aluno_i < numeroDeAlunos; aluno_i++)
 		{
-			obterVetorLinhaDaMatriz(notas,numeroDeAlunos,numeroDeNotas,i,notasDeUmAluno)
-			mediasCalculadas[i] = calculaMediaDoVetor(notasDeUmAluno,numeroDeNotas)
+			obterVetorLinhaDaMatriz(notas,numeroDeAlunos,numeroDeNotas,aluno_i,notasDeUmAluno)
+			mediasCalculadas[aluno_i] = calculaMediaDoVetor(notasDeUmAluno,numeroDeNotas)
 		}
 	}
 
@@ -109,7 +101,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1967; 
+ * @POSICAO-CURSOR = 1145; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
