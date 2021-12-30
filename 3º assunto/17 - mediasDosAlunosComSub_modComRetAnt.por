@@ -65,12 +65,12 @@ programa
 		retorne media
 	}
 
-	funcao calcularMediasDosAlunos(real notas[][], inteiro numeroDeAlunos, inteiro numeroDeNotas, real notasDeUmAluno[], real mediasCalculadas[])
+	funcao calcularMediasDosAlunos(real notas[][], inteiro numeroDeAlunos, inteiro numeroDeNotas, real notasDoAluno_i[], real mediasCalculadas[])
 	{
 		para(inteiro aluno_i = 0; aluno_i < numeroDeAlunos; aluno_i++)
 		{
-			obterVetorLinhaDaMatriz(notas,numeroDeAlunos,numeroDeNotas,aluno_i,notasDeUmAluno)
-			mediasCalculadas[aluno_i] = calculaMediaDoVetor(notasDeUmAluno,numeroDeNotas)
+			obterVetorLinhaDaMatriz(notas,numeroDeAlunos,numeroDeNotas,aluno_i,notasDoAluno_i)
+			mediasCalculadas[aluno_i] = calculaMediaDoVetor(notasDoAluno_i,numeroDeNotas)
 		}
 	}
 
@@ -101,7 +101,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1145; 
+ * @POSICAO-CURSOR = 1843; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
