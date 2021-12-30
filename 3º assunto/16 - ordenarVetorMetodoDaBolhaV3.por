@@ -2,11 +2,11 @@ programa
 {
 	inclua biblioteca Util --> Ut
 	
-	funcao trocaValores(real vetor[], inteiro pos_i, inteiro pos_j)
+	funcao trocaValores(real vetor[], inteiro posicao_i, inteiro posicao_j)
 	{
-		real valorDaPosicao_i = vetor[pos_i]
-		vetor[pos_i] = vetor[pos_j]
-		vetor[pos_j] = valorDaPosicao_i		
+		real valorDaPosicao_i = vetor[posicao_i]
+		vetor[posicao_i] = vetor[posicao_j]
+		vetor[posicao_j] = valorDaPosicao_i		
 	}
 
 	//Ordena pelo método da bolha simples
@@ -69,7 +69,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 790; 
+ * @POSICAO-CURSOR = 106; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
