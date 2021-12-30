@@ -74,9 +74,9 @@ programa
 		}
 	}
 
-	funcao escreverVetor(real vetor[], inteiro tam)
+	funcao escreverVetor(real vetor[], inteiro numeroDeElementos)
 	{
-		para(inteiro i = 0; i < tam; i++)
+		para(inteiro i = 0; i < numeroDeElementos; i++)
 		{
 			escreva(vetor[i]," ")
 		}
@@ -101,7 +101,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1843; 
+ * @POSICAO-CURSOR = 1705; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
