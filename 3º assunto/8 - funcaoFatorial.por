@@ -13,21 +13,21 @@ programa
 	funcao inicio()
 	{
 		inteiro numero, valorDoFatorial
-		escreva("Calcula o fatorial de um número\n")
-		escreva("Entre com um número\n")
+		escreva("Calcula o fatorial de um nÃºmero\n")
+		escreva("Entre com um nÃºmero\n")
 		leia(numero)
 		valorDoFatorial = fatorial(numero)
-		escreva("O valor do fatorial é: ",valorDoFatorial,"\n")
-		escreva("O valor do fatorial é: ",fatorial(numero),"\n")
+		escreva(numero, "! = ",valorDoFatorial,"\n")
+		escreva(numero, "! = ",fatorial(numero),"\n")
 	}
 }
 
 /* $$$ Portugol Studio $$$ 
  * 
- * Esta seção do arquivo guarda informações do Portugol Studio.
- * Você pode apagá-la se estiver utilizando outro editor.
+ * Esta seÃ§Ã£o do arquivo guarda informaÃ§Ãµes do Portugol Studio.
+ * VocÃª pode apagÃ¡-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 461; 
+ * @POSICAO-CURSOR = 411; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
