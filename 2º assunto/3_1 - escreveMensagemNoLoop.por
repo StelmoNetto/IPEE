@@ -11,6 +11,8 @@ programa
 			
 			escreva("A afirmação acima é verdadeira? (S/s - sim)\n")
 			leia(resposta)			
+			
+			respostaNaoForSim = resposta != 'S' e resposta != 's'
 		}
 	}
 }
@@ -20,7 +22,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 125; 
+ * @POSICAO-CURSOR = 334; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
