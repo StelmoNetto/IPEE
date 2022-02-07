@@ -1,20 +1,20 @@
 programa
 {
-	//Seu programa sempre iniciará da função inicio
+	//Seu programa sempre iniciarÃ¡ da funÃ§Ã£o inicio
 	funcao inicio()
 	{
-		/*Inicie a partir daqui.
-		1ª - declare as variáveis de entrada e saída*/		
-		const real CALORESPECIFICODOSERHUMANO = 3500.0 //inicialização obrigatória
+		/*Inicie a partir daqui.
+		1Âª - declare as variÃ¡veis de entrada e saÃ­da*/		
+		const real CALOR_ESPECIFICO_DO_SER_HUMANO_EM_J_POR_KGK = 3500.0 //inicializaÃ§Ã£o obrigatÃ³ria
 		logico ehPrimeiroDiaDeAula
-		real massaMediaDosAlunos
+		real massaMediaDosAlunosEmKg
 		
-		//2ª - atribua valores às variáveis
-		inteiro numDeAlunos = 45 //permitido criar e inicializar
-		massaMediaDosAlunos = 65.67 //kg
+		//2Âª - atribua valores Ã s variÃ¡veis
+		inteiro numeroDeAlunos = 45 //permitido criar e inicializar
+		massaMediaDosAlunosEmKg = 65.67
 		ehPrimeiroDiaDeAula = verdadeiro
 		
-		//3ª cálculos ou processamento
+		//3Âª cÃ¡lculos ou processamento
 			//Aprendendo ...
 	}
 }
@@ -23,10 +23,10 @@ programa
 
 /* $$$ Portugol Studio $$$ 
  * 
- * Esta seção do arquivo guarda informações do Portugol Studio.
- * Você pode apagá-la se estiver utilizando outro editor.
+ * Esta seÃ§Ã£o do arquivo guarda informaÃ§Ãµes do Portugol Studio.
+ * VocÃª pode apagÃ¡-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 530; 
+ * @POSICAO-CURSOR = 542; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
