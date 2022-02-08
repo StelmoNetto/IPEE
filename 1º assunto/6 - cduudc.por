@@ -3,25 +3,25 @@ programa
 	funcao inicio()
 	{
 		//variáveis de entrada
-		inteiro n
+		inteiro numero
 
 		//variáveis de saida
-		inteiro c,d,u, udc
+		inteiro centena,dezena,unidade, numeroComDigitosInvertidos
 
 		//Entrada
 		escreva("Entre com o valor de n \n")
-		leia(n)
+		leia(numero)
 
 		//Processamento
-		u = n % 10
+		unidade = numero % 10
 
-		d = (n / 10) % 10
+		dezena = (numero / 10) % 10
 
-		c = n / 100 //ou (n / 100) % 10
+		centena = numero / 100 //ou (n / 100) % 10
 		
-		udc = u * 100 + d * 10 + c
+		numeroComDigitosInvertidos = unidade * 100 + dezena * 10 + centena
 		
-		escreva("O novo número com dígitos invertidos é: ",udc)
+		escreva("O novo número com dígitos invertidos é: ",numeroComDigitosInvertidos)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -29,7 +29,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 242; 
+ * @POSICAO-CURSOR = 131; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
