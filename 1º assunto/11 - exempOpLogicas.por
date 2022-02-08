@@ -2,25 +2,25 @@ programa
 {
 	funcao inicio()
 	{
-		escreva("Os resultados lÛgicos de:\n")
-		escreva("1: (7 > 5) È ",7 > 5,"\n")
-		logico valLog = 2 < 3
-		escreva("2: (7 > 5) e (2 < 3) È ",(7 > 5) e valLog,"\n")
+		escreva("Os resultados l√≥gicos das express√µes l√≥gico/relacionais:\n")		
 		
-		escreva("3: (7 < 5) ou (nao(2 > 3)) È ",(7 < 5) ou (nao(2 > 3)),"\n")
+		logico resultadoLogico = 2 < 3
+		escreva("1: (7 > 5) e (2 < 3) = ",(7 > 5) e resultadoLogico,"\n")
+		
+		escreva("2: nao((7 < 5) e (2 < 3)) = ",nao((7 < 5) e (2 < 3)),"\n")
 
-		escreva("4: 2 == 1 + 1 È ",2 == 1 + 1,"\n")
+		escreva("3: (7 < 5) ou (2 > 3) = ",(7 < 5) ou (2 > 3),"\n")
 
-		escreva("5: 3 != 1 È ",3 != 1,"\n")
+		escreva("4: (7 < 5) ou (nao(2 > 3)) = ",(7 < 5) ou (nao(2 > 3)),"\n")
 	}
 }
 
 /* $$$ Portugol Studio $$$ 
  * 
- * Esta seÁ„o do arquivo guarda informaÁıes do Portugol Studio.
- * VocÍ pode apag·-la se estiver utilizando outro editor.
+ * Esta se√ß√£o do arquivo guarda informa√ß√µes do Portugol Studio.
+ * Voc√™ pode apag√°-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 365; 
+ * @POSICAO-CURSOR = 422; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
