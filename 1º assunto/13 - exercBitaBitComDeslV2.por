@@ -3,9 +3,9 @@ programa
 	inclua biblioteca Util --> ut
 	funcao inicio()
 	{
-		const inteiro TEMPODEESPERA = 2000 //milissegundos
-		const inteiro POSICAODOBITLAMPQUEIMADA = 3 //4º bit
-		const inteiro POSICAODOBITDECOMANDARINTERRUPTOR = 5 //6º bit
+		const inteiro TEMPO_DE_ESPERA = 2000 //milissegundos
+		const inteiro POSICAO_DO_BIT_LAMPADA_QUEIMADA = 3 //4º bit
+		const inteiro POSICAO_DO_BIT_DE_COMANDAR_INTERRUPTOR = 5 //6º bit
 		const inteiro LIGADO = 1
 		const inteiro QUEIMADO = 1
 		
@@ -19,26 +19,26 @@ programa
 
 		//Item I:
 		escreva("\nItem I:\n")
-		bitSelecionado = ((registro >> POSICAODOBITDECOMANDARINTERRUPTOR) & 1)
+		bitSelecionado = ((registro >> POSICAO_DO_BIT_DE_COMANDAR_INTERRUPTOR) & 1)
 		interruptorNaPosicaoLigado = bitSelecionado == LIGADO
 		escreva("Interruptor na posição ligar? ",interruptorNaPosicaoLigado,"\n")
 
-		bitSelecionado = ((registro >> POSICAODOBITLAMPQUEIMADA) & 1)
+		bitSelecionado = ((registro >> POSICAO_DO_BIT_LAMPADA_QUEIMADA) & 1)
 		lampadaEstaQueimada = bitSelecionado == QUEIMADO
 		escreva("Lâmpada está queimada? ",lampadaEstaQueimada,"\n\n")
 		///Fim do item I
 
-		ut.aguarde(TEMPODEESPERA)
+		ut.aguarde(TEMPO_DE_ESPERA)
 
 		//Item II:
 		escreva("Item II:\n")
 		//Ativa interruptor da lâmpada
-		inteiro mascParaChavearInterruptorParaLigar = LIGADO << POSICAODOBITDECOMANDARINTERRUPTOR
-		registro = registro | mascParaChavearInterruptorParaLigar
+		inteiro chavearInterruptorParaLigar = LIGADO << POSICAO_DO_BIT_DE_COMANDAR_INTERRUPTOR
+		registro = registro | chavearInterruptorParaLigar
 		escreva("Valor do registro após o interruptor ir para a posição ligar: ",registro,"\n\n")
 		///Fim do item II
 
-		ut.aguarde(TEMPODEESPERA)
+		ut.aguarde(TEMPO_DE_ESPERA)
 
 		//Item III:
 		escreva("Item III:\n")
@@ -46,23 +46,23 @@ programa
 		escreva("Valor do registro após negar todos os seus bits: ",registro,"\n\n")
 		///Fim do item III
 
-		ut.aguarde(TEMPODEESPERA)
+		ut.aguarde(TEMPO_DE_ESPERA)
 
 		//Exibindo o estado do interruptor:
 		escreva("O estado do interruptor antes de alternar:\n")
-		bitSelecionado = ((registro >> POSICAODOBITDECOMANDARINTERRUPTOR) & 1)
+		bitSelecionado = ((registro >> POSICAO_DO_BIT_DE_COMANDAR_INTERRUPTOR) & 1)
 		interruptorNaPosicaoLigado = bitSelecionado == LIGADO
 		escreva("Interruptor na posição ligar? ",interruptorNaPosicaoLigado,"\n\n")
 
-		ut.aguarde(TEMPODEESPERA)
+		ut.aguarde(TEMPO_DE_ESPERA)
 
 		//Item IV:
 		escreva("Item IV:\n")
 		escreva("Alternando o interruptor da lâmpada:\n")
 		escreva("(Ligado -> desligado ou desligado -> ligado)\n\n")
-		registro = registro ^ mascParaChavearInterruptorParaLigar
+		registro = registro ^ chavearInterruptorParaLigar
 
-		bitSelecionado = ((registro >> POSICAODOBITDECOMANDARINTERRUPTOR) & 1)
+		bitSelecionado = ((registro >> POSICAO_DO_BIT_DE_COMANDAR_INTERRUPTOR) & 1)
 		interruptorNaPosicaoLigado = bitSelecionado == LIGADO
 		escreva("Interruptor na posição ligar? ",interruptorNaPosicaoLigado,"\n\n")
 		///Fim do item IV
@@ -74,7 +74,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1610; 
+ * @POSICAO-CURSOR = 1192; 
  * @PONTOS-DE-PARADA = 49, 57, 26, 44, 31;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
