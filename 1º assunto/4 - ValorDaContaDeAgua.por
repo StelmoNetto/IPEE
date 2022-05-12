@@ -3,13 +3,13 @@ programa
 	funcao inicio()
 	{
 		//Entrada
-		real salarioMinimo, consumo, percentualDeDesconto
+		real salarioMinimo, consumoEmLitros, percentualDeDesconto
 
 		//Saída
 		real valorDaConta, valorDaContaComDesconto
 		
 		escreva("Entre com o consumo de água (litros)\n")		
-		leia(consumo)
+		leia(consumoEmLitros)
 
 		escreva("Forneça o valor do salário mínimo em Reais\n")
 		leia(salarioMinimo)
@@ -18,7 +18,7 @@ programa
 		leia(percentualDeDesconto)
 
 		//Processamento		
-		valorDaConta = 0.02 * salarioMinimo * consumo / 1000
+		valorDaConta = 0.02 * salarioMinimo * consumoEmLitros / 1000
 		
 		valorDaContaComDesconto = valorDaConta * (1 - (percentualDeDesconto / 100.0))
 
@@ -32,7 +32,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 518; 
+ * @POSICAO-CURSOR = 133; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
