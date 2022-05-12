@@ -3,7 +3,7 @@ programa
 	inclua biblioteca Util --> ut
 	funcao inicio()
 	{
-		const inteiro TEMPO_DE_ESPERA = 2000 //milissegundos
+		const inteiro TEMPO_DE_ESPERA_MS = 2000 //milissegundos
 		const inteiro POSICAO_DO_BIT_LAMPADA_QUEIMADA = 3 //4º bit
 		const inteiro POSICAO_DO_BIT_DE_COMANDAR_INTERRUPTOR = 5 //6º bit
 		const inteiro LIGADO = 1
@@ -28,7 +28,7 @@ programa
 		escreva("Lâmpada está queimada? ",lampadaEstaQueimada,"\n\n")
 		///Fim do item I
 
-		ut.aguarde(TEMPO_DE_ESPERA)
+		ut.aguarde(TEMPO_DE_ESPERA_MS)
 
 		//Item II:
 		escreva("Item II:\n")
@@ -38,7 +38,7 @@ programa
 		escreva("Valor do registro após o interruptor ir para a posição ligar: ",registro,"\n\n")
 		///Fim do item II
 
-		ut.aguarde(TEMPO_DE_ESPERA)
+		ut.aguarde(TEMPO_DE_ESPERA_MS)
 
 		//Item III:
 		escreva("Item III:\n")
@@ -46,7 +46,7 @@ programa
 		escreva("Valor do registro após negar todos os seus bits: ",registro,"\n\n")
 		///Fim do item III
 
-		ut.aguarde(TEMPO_DE_ESPERA)
+		ut.aguarde(TEMPO_DE_ESPERA_MS)
 
 		//Exibindo o estado do interruptor:
 		escreva("O estado do interruptor antes de alternar:\n")
@@ -54,7 +54,7 @@ programa
 		interruptorNaPosicaoLigado = bitSelecionado == LIGADO
 		escreva("Interruptor na posição ligar? ",interruptorNaPosicaoLigado,"\n\n")
 
-		ut.aguarde(TEMPO_DE_ESPERA)
+		ut.aguarde(TEMPO_DE_ESPERA_MS)
 
 		//Item IV:
 		escreva("Item IV:\n")
@@ -74,8 +74,8 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1192; 
- * @PONTOS-DE-PARADA = 49, 57, 26, 44, 31;
+ * @POSICAO-CURSOR = 641; 
+ * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
