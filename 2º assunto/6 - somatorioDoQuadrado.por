@@ -2,11 +2,11 @@ programa
 {
 	funcao inicio()
 	{
-		const inteiro NUMERODETERMOS = 3
+		const inteiro NUMERO_DE_TERMOS = 3
 		real somatorio = 0.0,x
 		inteiro contagemDeIteracoes = 1
 
-		enquanto(contagemDeIteracoes <= NUMERODETERMOS)
+		enquanto(contagemDeIteracoes <= NUMERO_DE_TERMOS)
 		{
 			escreva ("Entre com o valor de x",contagemDeIteracoes,"\n")
 			leia(x)

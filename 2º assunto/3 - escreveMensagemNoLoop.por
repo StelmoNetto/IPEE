@@ -4,11 +4,11 @@ programa
 	{
 		caracter resposta = 'q'
 		
-		enquanto(resposta != 'S' e resposta != 's')
+		enquanto(resposta != 'S' e resposta != 's')
 		{
-			escreva("A disciplina mais fácil de Eng. de Elétrica é introd. à computação\n\n")
+			escreva("A disciplina mais fÃ¡cil de Eng. de ElÃ©trica Ã© introd. Ã  programaÃ§Ã£o\n\n")
 			
-			escreva("A afirmação acima é verdadeira? (S/s - sim)\n")
+			escreva("A afirmaÃ§Ã£o acima Ã© verdadeira? (S/s - sim)\n")
 			leia(resposta)			
 		}
 	}
@@ -16,10 +16,10 @@ programa
 
 /* $$$ Portugol Studio $$$ 
  * 
- * Esta seção do arquivo guarda informações do Portugol Studio.
- * Você pode apagá-la se estiver utilizando outro editor.
+ * Esta seÃ§Ã£o do arquivo guarda informaÃ§Ãµes do Portugol Studio.
+ * VocÃª pode apagÃ¡-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 296; 
+ * @POSICAO-CURSOR = 185; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
