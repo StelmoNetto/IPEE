@@ -1,10 +1,9 @@
 programa
 {
 	funcao inicio()
-	{
-		inteiro somatorio,contagemDeIteracoes,x
-		contagemDeIteracoes = 1
-		somatorio = 0
+	{				
+		inteiro contagemDeIteracoes = 1
+		real somatorio = 0.0,x
 
 		enquanto(contagemDeIteracoes<=3)
 		{
@@ -25,7 +24,7 @@ programa
  * 
  * @POSICAO-CURSOR = 356; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {x, 5, 40, 1};
+ * @SIMBOLOS-INSPECIONADOS = {contagemDeIteracoes, 5, 10, 19};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */

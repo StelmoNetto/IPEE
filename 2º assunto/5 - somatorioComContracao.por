@@ -2,9 +2,8 @@ programa
 {
 	funcao inicio()
 	{
-		inteiro somatorio,contagemDeIteracoes,x
-		contagemDeIteracoes = 1
-		somatorio = 0
+		inteiro contagemDeIteracoes = 1
+		real somatorio = 0.0,x
 
 		enquanto(contagemDeIteracoes<=3)
 		{
@@ -23,9 +22,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 274; 
+ * @POSICAO-CURSOR = 89; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {x, 5, 40, 1};
+ * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
