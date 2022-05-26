@@ -3,19 +3,20 @@ programa
 	
 	funcao inicio()
 	{
-		const inteiro MASCARASELETORADENIBBLE = 15
+		const inteiro MASCARA_SELETORA_DE_NIBBLE = 15 //0000 ... 1111b
 		const inteiro NIBBLE = 4
+		const inteiro DOUBLE_WORD = 32
 				
 		inteiro dado = 524556 //0000 0000 0000 1000 0000 0001 0000 1100b -> 0 0 0 8 0 1 0 12
-
-		inteiro numeroDeDeslocamentos = 28 //(32 - 4) numero de deslocamento para o 1º nibble mais significativo
+		inteiro numeroDeDeslocamentos = 0
+		inteiro nibbleDeslocadoParaLSN = dado
 		faca
-		{
-			inteiro nibbleDeslocadoParaLSN = dado >> numeroDeDeslocamentos
-			inteiro nibbleMenosSignificativoSelecionado = nibbleDeslocadoParaLSN & MASCARASELETORADENIBBLE
+		{			
+			inteiro nibbleMenosSignificativoSelecionado = nibbleDeslocadoParaLSN & MASCARA_SELETORA_DE_NIBBLE
 			escreva(nibbleMenosSignificativoSelecionado," ")
-			numeroDeDeslocamentos-= NIBBLE
-		}enquanto(numeroDeDeslocamentos >= 0)
+			numeroDeDeslocamentos+= NIBBLE
+			nibbleDeslocadoParaLSN = dado >> numeroDeDeslocamentos
+		}enquanto(numeroDeDeslocamentos < DOUBLE_WORD)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -23,7 +24,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 327; 
+ * @POSICAO-CURSOR = 638; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
