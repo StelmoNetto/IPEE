@@ -5,7 +5,7 @@ programa
 		real valor, limiteInferior, limiteSuperior, incremento
 		logico incrementoPositivoMasLimiteInferiorMaiorQueSuperior, incrementoNegativoMasLimiteInferiorMenorQueSuperior
 		logico oIncrementoEstaIncorreto, incrementoNuloMasLimiteInferiorDiferenteDoSuperior, noIntervalo
-		inteiro cont = 1
+		inteiro contador = 1
 
 		escreva("Entre com os valores inicial e final do intervalo\n")
 		leia(limiteInferior,limiteSuperior)
@@ -31,9 +31,9 @@ programa
 		
 		faca
 		{
-			escreva("O valor na ", cont, " iteração é ", valor,"\n")
+			escreva("O valor na ", contador, " iteração é ", valor,"\n")
 			valor+= incremento // valor = valor + incremento
-			cont++
+			contador++
 			
 			se(limiteInferior == limiteSuperior)
 			{
@@ -55,7 +55,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 836; 
+ * @POSICAO-CURSOR = 311; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = {valor, 5, 7, 5}-{limiteInferior, 5, 14, 14}-{limiteSuperior, 5, 30, 14}-{incremento, 5, 46, 10}-{incrementoPositivoMasLimiteInferiorMaiorQueSuperior, 6, 9, 51}-{incrementoNegativoMasLimiteInferiorMenorQueSuperior, 6, 62, 51}-{oIncrementoEstaIncorreto, 7, 9, 24}-{incrementoNuloMasLimiteInferiorDiferenteDoSuperior, 7, 35, 50}-{noIntervalo, 7, 87, 11}-{cont, 8, 10, 4};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
