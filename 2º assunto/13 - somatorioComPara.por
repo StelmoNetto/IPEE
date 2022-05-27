@@ -2,10 +2,9 @@ programa
 {
 	funcao inicio()
 	{
-		inteiro contagemDeIteracoes = 1
 		real somatorio = 0.0,x
 		
-		para(contagemDeIteracoes = 1; contagemDeIteracoes <= 3; contagemDeIteracoes++)
+		para(inteiro contagemDeIteracoes = 1; contagemDeIteracoes <= 3; contagemDeIteracoes++)
 		{
 			escreva("Entre com o valor de x",contagemDeIteracoes,"\n")
 			leia(x)
@@ -19,7 +18,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 89; 
+ * @POSICAO-CURSOR = 74; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
