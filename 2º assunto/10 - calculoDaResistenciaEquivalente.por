@@ -4,7 +4,7 @@ programa
 	
 	funcao inicio()
 	{
-		const inteiro NUMERODECASASDECIMAIS = 3
+		const inteiro NUMERO_DE_CASAS_DECIMAIS = 3
 		real resistencia, resistenciaEquivalente, somatorioDoInversoDasResistencias = 0.0
 		inteiro numeroDeResistores, contagemDeResistenciasCorretas = 1
 		logico numeroDeResistoresInvalido, resistenciaInvalida
@@ -45,7 +45,7 @@ programa
 
 		resistenciaEquivalente = 1 / somatorioDoInversoDasResistencias
 
-		escreva("A resistência equivalente dos ", numeroDeResistores, " resistores é igual a: ",Mt.arredondar(resistenciaEquivalente,NUMERODECASASDECIMAIS))
+		escreva("A resistência equivalente dos ", numeroDeResistores, " resistores é igual a: ",Mt.arredondar(resistenciaEquivalente,NUMERO_DE_CASAS_DECIMAIS))
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -53,7 +53,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 206; 
+ * @POSICAO-CURSOR = 86; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
