@@ -2,13 +2,13 @@ programa
 {
 	funcao inicio()
 	{
-		const inteiro NL = 2, NC = 3
+		const inteiro NUMERO_DE_LINHAS = 2, NUMERO_DE_COLUNAS = 3
 		inteiro i,j
-		real notas[NL][NC]
-		para(i = 0; i < NL; i++)
+		real notas[NUMERO_DE_LINHAS][NUMERO_DE_COLUNAS]
+		para(i = 0; i < NUMERO_DE_LINHAS; i++)
 		{
 			escreva("Entre com as 3 notas do aluno",i + 1,"\n")
-			para(j = 0; j < NC; j++)
+			para(j = 0; j < NUMERO_DE_COLUNAS; j++)
 			{				
 				leia(notas[i][j])
 				escreva(notas[i][j],"\n")
@@ -19,10 +19,10 @@ programa
 
 /* $$$ Portugol Studio $$$ 
  * 
- * Esta seção do arquivo guarda informações do Portugol Studio.
- * Você pode apagá-la se estiver utilizando outro editor.
+ * Esta seÃ§Ã£o do arquivo guarda informaÃ§Ãµes do Portugol Studio.
+ * VocÃª pode apagÃ¡-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 30; 
+ * @POSICAO-CURSOR = 69; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

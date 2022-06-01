@@ -3,16 +3,16 @@ programa
 	
 	funcao inicio()
 	{
-		const inteiro NUMERODELINHAS = 3
-		const inteiro NUMERODECOLUNAS = 2
+		const inteiro NUMERO_DE_LINHAS = 3
+		const inteiro NUMERO_DE_COLUNAS = 2
 		
-		real matriz[NUMERODELINHAS][NUMERODECOLUNAS]
+		real matriz[NUMERO_DE_LINHAS][NUMERO_DE_COLUNAS]
 		inteiro linha,coluna
 		
-		escreva("Entre com os elementos da matriz de tamanho: ",NUMERODELINHAS," x ",NUMERODECOLUNAS,"\n")
-		para(inteiro i = 0; i < NUMERODELINHAS; i++)
+		escreva("Entre com os elementos da matriz de tamanho: ",NUMERO_DE_LINHAS," x ",NUMERO_DE_COLUNAS,"\n")
+		para(inteiro i = 0; i < NUMERO_DE_LINHAS; i++)
 		{
-			para(inteiro j = 0; j < NUMERODECOLUNAS; j++)
+			para(inteiro j = 0; j < NUMERO_DE_COLUNAS; j++)
 			{
 				leia(matriz[i][j])
 			}
@@ -21,9 +21,9 @@ programa
 		logico indiceDeLinhaInvalido
 		faca
 		{
-			escreva("Entre com a linha - [0,",NUMERODELINHAS - 1, "]\n")
+			escreva("Entre com a linha - [0,",NUMERO_DE_LINHAS - 1, "]\n")
 			leia(linha)
-			indiceDeLinhaInvalido = linha < 0 ou linha >= NUMERODELINHAS
+			indiceDeLinhaInvalido = linha < 0 ou linha >= NUMERO_DE_LINHAS
 			se(indiceDeLinhaInvalido)
 			{
 				escreva("Número incorreto na linha\n")
@@ -34,10 +34,10 @@ programa
 		logico indiceDeColunaInvalido
 		faca
 		{
-			escreva("Entre com a coluna - [0,",NUMERODECOLUNAS - 1,"]\n")
+			escreva("Entre com a coluna - [0,",NUMERO_DE_COLUNAS - 1,"]\n")
 			leia(coluna)			
 
-			indiceDeColunaInvalido = coluna < 0 ou coluna >= NUMERODECOLUNAS
+			indiceDeColunaInvalido = coluna < 0 ou coluna >= NUMERO_DE_COLUNAS
 
 			se(indiceDeColunaInvalido)
 			{
@@ -49,10 +49,10 @@ programa
 		leia(matriz[linha][coluna])
 
 		escreva("Todos os elementos da minha matriz\n")
-		para(inteiro j = 0; j < NUMERODELINHAS; j++)
+		para(inteiro j = 0; j < NUMERO_DE_LINHAS; j++)
 		{
 			//escreva("Os dois elementos da ",j + 1," ª linha\n")
-			para(inteiro i = 0; i < NUMERODECOLUNAS; i++)
+			para(inteiro i = 0; i < NUMERO_DE_COLUNAS; i++)
 			{
 				escreva(matriz[j][i]," ")
 			}		
@@ -65,7 +65,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 170; 
+ * @POSICAO-CURSOR = 86; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

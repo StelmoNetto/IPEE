@@ -5,23 +5,23 @@ programa
 	funcao inicio()
 	{
 		const inteiro PRECISAO = 4
-		const inteiro NUMERODEELEMENTOS = 3
-		real vetorA[NUMERODEELEMENTOS], vetorB[NUMERODEELEMENTOS], somatorioDosProdutosDasComponentes = 0.0
+		const inteiro NUMERO_DE_ELEMENTOS = 3
+		real vetorA[NUMERO_DE_ELEMENTOS], vetorB[NUMERO_DE_ELEMENTOS], somatorioDosProdutosDasComponentes = 0.0
 		inteiro i
 		
 		escreva("Esse programa calcula o produto escalar entre dois vetores\n")
 
-		se(NUMERODEELEMENTOS > 0)
+		se(NUMERO_DE_ELEMENTOS > 0)
 		{		
-			escreva("Entre com os ", NUMERODEELEMENTOS, " elementos do 1º vetor\n")
-			para(i = 0; i < NUMERODEELEMENTOS; i++)
+			escreva("Entre com os ", NUMERO_DE_ELEMENTOS, " elementos do 1º vetor\n")
+			para(i = 0; i < NUMERO_DE_ELEMENTOS; i++)
 			{
 				escreva("Forneça o ",i + 1, "º elemento\n")
 				leia(vetorA[i])
 			}
 	
-			escreva("Entre com os ", NUMERODEELEMENTOS, " elementos do 2º vetor\n")
-			para(i = 0; i < NUMERODEELEMENTOS; i++)
+			escreva("Entre com os ", NUMERO_DE_ELEMENTOS, " elementos do 2º vetor\n")
+			para(i = 0; i < NUMERO_DE_ELEMENTOS; i++)
 			{
 				escreva("Forneça o ",i + 1, "º elemento\n")
 				leia(vetorB[i])
@@ -29,7 +29,7 @@ programa
 			
 	
 			//Cálculo do produto escalar		
-			para(i = 0; i < NUMERODEELEMENTOS; i++)
+			para(i = 0; i < NUMERO_DE_ELEMENTOS; i++)
 			{
 				somatorioDosProdutosDasComponentes+= vetorA[i] * vetorB[i] //somatorioDosProdutosDasComponentes = somatorioDosProdutosDasComponentes + vetorA[i] * vetorB[i]
 			}
@@ -47,7 +47,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1093; 
+ * @POSICAO-CURSOR = 115; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

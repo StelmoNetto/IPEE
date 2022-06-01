@@ -2,16 +2,16 @@ programa
 {
 	funcao inicio()
 	{
-		const inteiro NUMERODENOTASMAXIMO = 100		
-		real somatorioDasNotas = 0.0, media, notas[NUMERODENOTASMAXIMO]
+		const inteiro NUMERO_DE_NOTAS_MAXIMO = 100		
+		real somatorioDasNotas = 0.0, media, notas[NUMERO_DE_NOTAS_MAXIMO]
 		inteiro i, numeroDeNotas
 
 		logico numeroDeNotasInvalido
 		faca
 		{
-			escreva("Entre o número de notas com no máximo de ",NUMERODENOTASMAXIMO," notas\n")
+			escreva("Entre o número de notas com no máximo de ",NUMERO_DE_NOTAS_MAXIMO," notas\n")
 			leia(numeroDeNotas)
-			numeroDeNotasInvalido = numeroDeNotas < 0 ou numeroDeNotas > NUMERODENOTASMAXIMO
+			numeroDeNotasInvalido = numeroDeNotas < 0 ou numeroDeNotas > NUMERO_DE_NOTAS_MAXIMO
 		}enquanto(numeroDeNotasInvalido)
 				
 		escreva("Entre com as ",numeroDeNotas," notas\n")
@@ -19,7 +19,7 @@ programa
 		{
 			leia(notas[i])
 
-			somatorioDasNotas+= notas[i] //s = s + notas[i]			
+			somatorioDasNotas+= notas[i] //somatorioDasNotas = somatorioDasNotas + notas[i]			
 		}
 		para(i = 0; i < numeroDeNotas; i++)
 		{
@@ -34,7 +34,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 154; 
+ * @POSICAO-CURSOR = 641; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

@@ -3,8 +3,8 @@ programa
 	
 	funcao inicio()
 	{
-		const inteiro NUMERODELEMENTOSDOVETOR = 6
-		real vetor[NUMERODELEMENTOSDOVETOR] = {3.4, 1.2, 5.3, 1.2, 5.1, 5.3}
+		const inteiro NUMERO_DE_ELEMENTOS = 6
+		real vetor[NUMERO_DE_ELEMENTOS] = {3.4, 1.2, 5.3, 1.2, 5.1, 5.3}
 		real valorProcurado
 		inteiro i, indiceDaPrimeiraOcorrencia = -1 //inicializacao obrigatória
 		logico encontrado = falso
@@ -13,7 +13,7 @@ programa
 		leia(valorProcurado)
 
 		//Busca da posição da 1º ocorrência de valorProcurado em vetor
-		para(i = 0; i < NUMERODELEMENTOSDOVETOR; i++)
+		para(i = 0; i < NUMERO_DE_ELEMENTOS; i++)
 		{
 			encontrado = valorProcurado == vetor[i]
 
@@ -39,7 +39,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 667; 
+ * @POSICAO-CURSOR = 49; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
