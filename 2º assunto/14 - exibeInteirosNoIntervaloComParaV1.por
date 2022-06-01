@@ -3,9 +3,9 @@ programa
 	
 	funcao inicio()
 	{
-		const inteiro VALORINICIAL = 3
-		const inteiro VALORFINAL = -3
-		para(inteiro i = VALORINICIAL; i >= VALORFINAL; i--)
+		const inteiro VALOR_INICIAL = 3
+		const inteiro VALOR_FINAL = -3
+		para(inteiro i = VALOR_INICIAL; i >= VALOR_FINAL; i--)
 		{
 			escreva("Valor de i: ", i, " quadrado de i: ", i * i, " e seu cubo: ", i * i * i,"\n")
 		}
@@ -16,7 +16,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 146; 
+ * @POSICAO-CURSOR = 83; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
