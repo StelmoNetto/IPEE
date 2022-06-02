@@ -26,7 +26,7 @@ programa
 			indiceDeLinhaInvalido = linha < 0 ou linha >= NUMERO_DE_LINHAS
 			se(indiceDeLinhaInvalido)
 			{
-				escreva("Número incorreto na linha\n")
+				escreva("Índice de linha incorreto\n")
 			}			
 
 		}enquanto(indiceDeLinhaInvalido)
@@ -41,7 +41,7 @@ programa
 
 			se(indiceDeColunaInvalido)
 			{
-				escreva("Número incorreto na coluna\n")
+				escreva("Índice de coluna incorreto\n")
 			}
 		}enquanto(indiceDeColunaInvalido)
 
@@ -65,7 +65,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 86; 
+ * @POSICAO-CURSOR = 1011; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
