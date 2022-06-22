@@ -20,12 +20,12 @@ programa
 	
 	funcao inicio()
 	{
-		const inteiro NUMERODEELEMENTOS = 3
-		real vetor[NUMERODEELEMENTOS]
-		escreva("Entre com os ",NUMERODEELEMENTOS," elementos do vetor\n")
-		lerVetor(vetor,NUMERODEELEMENTOS)
-		escreva("Os ",NUMERODEELEMENTOS," elementos do vetor são:\n")
-		escreverVetor(vetor,NUMERODEELEMENTOS)
+		const inteiro NUMERO_DE_ELEMENTOS = 3
+		real vetor[NUMERO_DE_ELEMENTOS]
+		escreva("Entre com os ",NUMERO_DE_ELEMENTOS," elementos do vetor\n")
+		lerVetor(vetor,NUMERO_DE_ELEMENTOS)
+		escreva("Os ",NUMERO_DE_ELEMENTOS," elementos do vetor são:\n")
+		escreverVetor(vetor,NUMERO_DE_ELEMENTOS)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -33,7 +33,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 583; 
+ * @POSICAO-CURSOR = 360; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
