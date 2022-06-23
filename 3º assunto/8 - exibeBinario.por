@@ -4,9 +4,9 @@ programa
 	funcao exibirBinario(inteiro numero)
 	{
 		const inteiro LSB = 1 //posição	
-		const inteiro NUMERODEBITS = 32 //bits
+		const inteiro DOUBLE_WORD = 32 //bits
 		
-		inteiro posicaoSelecionadaDoBit = NUMERODEBITS - 1 //31
+		inteiro posicaoSelecionadaDoBit = DOUBLE_WORD - 1 //31
 		faca
 		{	
 			inteiro bitDaPosicaoSelecionadaNoLSB = numero >> posicaoSelecionadaDoBit
@@ -30,7 +30,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 189; 
+ * @POSICAO-CURSOR = 104; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
