@@ -7,7 +7,7 @@ programa
 		inteiro fat = 1, i
 		se(n < 0)
 		{			
-			fat = 0
+			fat = ERRO
 		}
 		
 		para(i = 2; i <= n; i++)
@@ -38,7 +38,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 240; 
+ * @POSICAO-CURSOR = 129; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
