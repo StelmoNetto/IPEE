@@ -40,12 +40,12 @@ programa
 	funcao exibirBinario(inteiro numero)
 	{
 		const inteiro NIBBLE = 4		
-		const inteiro NUMERODEBITS = 32
+		const inteiro DOUBLE_WORD = 32
 		const inteiro ATIVO = 1
 
 		logico iniciarExibicao = falso
 		
-		inteiro posicaoDeSelecaoDoBit = NUMERODEBITS - 1
+		inteiro posicaoDeSelecaoDoBit = DOUBLE_WORD - 1
 		faca
 		{	
 			inteiro lsbSelecionado = isolaNesimoBit(numero,posicaoDeSelecaoDoBit)
@@ -97,7 +97,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 78; 
+ * @POSICAO-CURSOR = 898; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
