@@ -31,7 +31,7 @@ programa
 	
 	funcao inicio()
 	{
-		const real CORRENTEMAXIMADOFUSIVELEMAMPERE = 5.1
+		const real CORRENTE_MAXIMA_DO_FUSIVEL_EM_AMPERE = 5.1
 		real tensaoNoCircuito = 10.0, correnteDoCircuito = 0.0
 		real r1 = 1.0, r2 = 1.0, vR1 = 0.0, vR2 = 0.0
 		logico rompeu = falso
@@ -39,7 +39,7 @@ programa
 		mensagemInformativaDoProblema()
 		
 		calculaCorrenteDoCircuito(tensaoNoCircuito,r1,r2,correnteDoCircuito)
-		rompeuFusivel(correnteDoCircuito,CORRENTEMAXIMADOFUSIVELEMAMPERE,rompeu)
+		rompeuFusivel(correnteDoCircuito,CORRENTE_MAXIMA_DO_FUSIVEL_EM_AMPERE,rompeu)
 
 		se(nao rompeu)
 		{
@@ -47,7 +47,7 @@ programa
 	
 			vR2 = correnteDoCircuito * r2		
 
-			apresentacaoDosResultados(correnteDoCircuito,CORRENTEMAXIMADOFUSIVELEMAMPERE,vR1,vR2)
+			apresentacaoDosResultados(correnteDoCircuito,CORRENTE_MAXIMA_DO_FUSIVEL_EM_AMPERE,vR1,vR2)
 		}
 		senao
 		{
@@ -60,7 +60,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 741; 
+ * @POSICAO-CURSOR = 980; 
  * @PONTOS-DE-PARADA = 41;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
