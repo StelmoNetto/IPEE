@@ -1,8 +1,8 @@
 programa
 {
 	const inteiro LSB = 1
-	const inteiro LSBATIVO = 1
-	const inteiro LSBLIMPO = 0
+	const inteiro LSB_ATIVO = 1
+	const inteiro LSB_LIMPO = 0
 	
 	funcao inteiro isolaNesimoBit(inteiro numero,inteiro posicaoDoBit)
 	{		
@@ -97,7 +97,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1773; 
+ * @POSICAO-CURSOR = 78; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
