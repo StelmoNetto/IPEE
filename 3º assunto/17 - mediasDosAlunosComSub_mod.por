@@ -79,15 +79,15 @@ programa
 	
 	funcao inicio()
 	{
-		const inteiro NUMERODEALUNOS = 2, NUMERODENOTAS = 3
-		real notas[NUMERODEALUNOS][NUMERODENOTAS], notasDeUmAluno[NUMERODENOTAS], medias[NUMERODEALUNOS]
-		lerMatrizNotas(notas,NUMERODEALUNOS,NUMERODENOTAS)
+		const inteiro NUMERO_DE_ALUNOS = 2, NUMERO_DE_NOTAS = 3
+		real notas[NUMERO_DE_ALUNOS][NUMERO_DE_NOTAS], notasDeUmAluno[NUMERO_DE_NOTAS], medias[NUMERO_DE_ALUNOS]
+		lerMatrizNotas(notas,NUMERO_DE_ALUNOS,NUMERO_DE_NOTAS)
 		//escreva("Entre com as ", NUMERODENOTAS, " notas dos ",NUMERODEALUNOS, " alunos\n")
 		//lerMatriz(notas,NUMERODEALUNOS,NUMERODENOTAS)
 		//lerMatrizComMensagemEmCadaLinha(notas,NUMERODEALUNOS,NUMERODENOTAS,"As notas do aluno ")
-		calculaAsMediasDosAlunos(notas,NUMERODEALUNOS,NUMERODENOTAS,notasDeUmAluno,medias)
-		escreva("O vetor com as médias dos alunos ",NUMERODEALUNOS," alunos:\n")
-		escreverVetor(medias,NUMERODEALUNOS)
+		calculaAsMediasDosAlunos(notas,NUMERO_DE_ALUNOS,NUMERO_DE_NOTAS,notasDeUmAluno,medias)
+		escreva("O vetor com as médias dos alunos ",NUMERO_DE_ALUNOS," alunos:\n")
+		escreverVetor(medias,NUMERO_DE_ALUNOS)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -95,7 +95,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1585; 
+ * @POSICAO-CURSOR = 2151; 
  * @PONTOS-DE-PARADA = 88, 58;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
