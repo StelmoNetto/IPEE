@@ -41,14 +41,14 @@ programa
 	
 	funcao inicio()
 	{
-		const inteiro NUMERODELINHAS = 2, NUMERODECOLUNAS = 2
-		real matriz[NUMERODELINHAS][NUMERODECOLUNAS]
+		const inteiro NUMERO_DE_LINHAS = 2, NUMERO_DE_COLUNAS = 2
+		real matriz[NUMERO_DE_LINHAS][NUMERO_DE_COLUNAS]
 
-		escreva("Entre com os elementos da matriz ", NUMERODELINHAS,"x",NUMERODECOLUNAS,"\n")
-		lerMatriz(matriz,NUMERODELINHAS,NUMERODECOLUNAS)
+		escreva("Entre com os elementos da matriz ", NUMERO_DE_LINHAS,"x",NUMERO_DE_COLUNAS,"\n")
+		lerMatriz(matriz,NUMERO_DE_LINHAS,NUMERO_DE_COLUNAS)
 
-		escreva("Os elementos da matriz ", NUMERODELINHAS,"x",NUMERODECOLUNAS," de entrada é:\n")
-		exibirMatriz(matriz,NUMERODELINHAS,NUMERODECOLUNAS)
+		escreva("Os elementos da matriz ", NUMERO_DE_LINHAS,"x",NUMERO_DE_COLUNAS," de entrada é:\n")
+		exibirMatriz(matriz,NUMERO_DE_LINHAS,NUMERO_DE_COLUNAS)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -56,7 +56,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 283; 
+ * @POSICAO-CURSOR = 883; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
