@@ -3,7 +3,7 @@ programa
 	inclua biblioteca Matematica --> Mt
 
 	//Precisa de uma entrada: x
-	funcao calcSomatoria(real x)
+	funcao calculaSomatoria(real x)
 	{
 		const inteiro PRECISAO = 4
 		real somatorio = 0.0, sinal = 1.0
@@ -22,7 +22,7 @@ programa
 		real x
 		escreva("Entre com o valor de x\n")
 		leia(x)
-		calcSomatoria(x)		
+		calculaSomatoria(x)		
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -30,7 +30,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 432; 
+ * @POSICAO-CURSOR = 86; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
