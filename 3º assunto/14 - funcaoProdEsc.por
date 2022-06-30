@@ -29,16 +29,16 @@ programa
 	
 	funcao inicio()
 	{
-		const inteiro NUMERODEELEMENTOS = 3
-		real vetor1[NUMERODEELEMENTOS], vetor2[NUMERODEELEMENTOS]
+		const inteiro NUMERO_DE_ELEMENTOS = 3
+		real vetor1[NUMERO_DE_ELEMENTOS], vetor2[NUMERO_DE_ELEMENTOS]
 		
-		escreva("Entre com os ",NUMERODEELEMENTOS," elementos do vetor 1\n")
-		lerVetor(vetor1,NUMERODEELEMENTOS)
+		escreva("Entre com os ",NUMERO_DE_ELEMENTOS," elementos do vetor 1\n")
+		lerVetor(vetor1,NUMERO_DE_ELEMENTOS)
 		
-		escreva("Entre com os ",NUMERODEELEMENTOS," elementos do vetor 2\n")
-		lerVetor(vetor2,NUMERODEELEMENTOS)
+		escreva("Entre com os ",NUMERO_DE_ELEMENTOS," elementos do vetor 2\n")
+		lerVetor(vetor2,NUMERO_DE_ELEMENTOS)
 
-		real produtoEscalar = calcularProdutoEscalar(vetor1,vetor2,NUMERODEELEMENTOS)		
+		real produtoEscalar = calcularProdutoEscalar(vetor1,vetor2,NUMERO_DE_ELEMENTOS)		
 		escreva("O produto escalar é ",produtoEscalar)		
 	}
 }
@@ -48,7 +48,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 374; 
+ * @POSICAO-CURSOR = 551; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
