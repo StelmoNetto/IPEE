@@ -3,12 +3,12 @@ programa
 	inclua biblioteca Matematica --> m
 	funcao inicio()
 	{
-		const real MENORSALARIO = 500.0
-		const real MAIORSALARIO = 1000.0
+		const real MENOR_SALARIO = 500.0
+		const real MAIOR_SALARIO = 1000.0
 
-		const real QUINZEPORCENTO = 0.15
-		const real DEZPORCENTO = 0.1
-		const real CINCOPORCENTO = 0.05
+		const real QUINZE_POR_CENTO = 0.15
+		const real DEZ_POR_CENTO = 0.1
+		const real CINCO_POR_CENTO = 0.05
 		
 		real salario
 		real salarioReajustado, percentualDeReajuste
@@ -16,19 +16,19 @@ programa
 		escreva("Qual o salário?\n")
 		leia(salario)
 
-		se(salario < MENORSALARIO)
+		se(salario < MENOR_SALARIO)
 		{
-			percentualDeReajuste = QUINZEPORCENTO
+			percentualDeReajuste = QUINZE_POR_CENTO
 		}
 		senao //salario >= 500
 		{
-			se (salario < MAIORSALARIO)
+			se (salario < MAIOR_SALARIO)
 			{
-				percentualDeReajuste = DEZPORCENTO
+				percentualDeReajuste = DEZ_POR_CENTO
 			}
 			senao //salario >= 1000
 			{
-				percentualDeReajuste = CINCOPORCENTO
+				percentualDeReajuste = CINCO_POR_CENTO
 			}
 		}
 		
@@ -41,7 +41,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 742; 
+ * @POSICAO-CURSOR = 222; 
  * @PONTOS-DE-PARADA = 17;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
