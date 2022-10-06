@@ -18,15 +18,15 @@ programa
 
 		// É Potencia De 2?
 		numero = 1 //0000 ... 0001b
-		logico ehPotenciaDe2 = (numero != 0) e nao((numero & (numero - 1)) != 0)
+		logico ehPotenciaDe2 = (numero != 0) e ((numero & (numero - 1)) == 0)
 		escreva(numero," é potencia de 2? ", ehPotenciaDe2,"\n")
 		
 		numero = 2 //0000 ... 0010b
-		ehPotenciaDe2 = (numero != 0) e nao((numero & (numero - 1)) != 0)
+		ehPotenciaDe2 = (numero != 0) e ((numero & (numero - 1)) == 0)
 		escreva(numero," é potencia de 2? ", ehPotenciaDe2,"\n")		
 
 		numero = 3 //0000 ... 0011b
-		ehPotenciaDe2 = (numero != 0) e nao((numero & (numero - 1)) != 0)
+		ehPotenciaDe2 = (numero != 0) e ((numero & (numero - 1)) == 0)
 		escreva(numero," é potencia de 2? ", ehPotenciaDe2,"\n")
 		////////////////////////////////////////		
 
@@ -103,7 +103,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 921; 
+ * @POSICAO-CURSOR = 875; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
