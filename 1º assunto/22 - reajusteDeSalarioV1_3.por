@@ -1,6 +1,6 @@
 programa
 {
-	inclua biblioteca Matematica --> m
+	inclua biblioteca Matematica --> Mt
 	funcao inicio()
 	{
 		const real MENOR_SALARIO = 500.0
@@ -30,7 +30,7 @@ programa
 		}
 		
 		salarioReajustado = salario * (1.0 + percentualDeReajuste)
-		escreva("O sálario reajustado é de: ",m.arredondar(salarioReajustado, 2)," Reais\n")
+		escreva("O sálario reajustado é de: ",Mt.arredondar(salarioReajustado, 2)," Reais\n")
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -38,7 +38,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 222; 
+ * @POSICAO-CURSOR = 692; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
