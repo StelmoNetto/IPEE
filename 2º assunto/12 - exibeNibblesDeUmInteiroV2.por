@@ -9,7 +9,7 @@ programa
 				
 		inteiro dado = 524556 //0000 0000 0000 1000 0000 0001 0000 1100b -> 12 0 1 0 8 0 0 0
 		inteiro numeroDeNibblesDeslocados = 0
-		inteiro nibbleDeslocadoParaLSN = dado //LSN = nibble menos significativo
+		inteiro nibbleDeslocadoParaLSN = dado //LSN = Least Significant Nibble (Nibble Menos Significativo)
 		faca
 		{			
 			inteiro nibbleMenosSignificativoSelecionado = nibbleDeslocadoParaLSN & MASCARA_SELETORA_DE_NIBBLE
@@ -24,7 +24,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 263; 
+ * @POSICAO-CURSOR = 392; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
