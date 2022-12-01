@@ -17,7 +17,7 @@ programa
 		escreva("Entre com um número\n")
 		leia(numero)
 		fatorial(numero,valorDoFatorial)
-		escreva("O valor do fatorial é: ",valorDoFatorial,"\n")
+		escreva(numero,"!= ",valorDoFatorial,"\n")
 	}
 }
 
@@ -26,7 +26,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 301; 
+ * @POSICAO-CURSOR = 358; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
