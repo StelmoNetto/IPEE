@@ -4,7 +4,7 @@ programa
 	funcao inicio()
 	{
 		//Declaração das variáveis
-		real a, b, aux
+		real a, b, copiaDeB
 
 		escreva("Esse programa troca os valores de a e b\n")
 
@@ -15,15 +15,15 @@ programa
 		escreva("Forneça o valor de B\n")
 		leia(b)
 
-		escreva("A = ",a," B = ", b,"\n")
+		escreva("\nAntes da troca: A = ",a," B = ", b,"\n")
 		
 		//Processamento
-		aux = b
+		copiaDeB = b
 		b = a
-		a = aux
+		a = copiaDeB
 
 		//Saída
-		escreva("A = ",a," B = ", b)
+		escreva("Após a troca: A = ",a," B = ", b)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -31,7 +31,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 72; 
+ * @POSICAO-CURSOR = 75; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
