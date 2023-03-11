@@ -22,7 +22,7 @@ programa
 		distanciaDeP1aP0 = Matematica.raiz((x1 - x0) * (x1 - x0) + (y1 - y0) * (y1 - y0), 2.0)
 		
 		//Saída com arredondamento de duas casas decimais
-		escreva("A distância entre os pontos p1 (x1,y1) e p0(x0,y0) é: ")
+		escreva("A distância(p1<",x1,",",y1,">,p0<",x0,",",y0,">) = ")
 		escreva(Matematica.arredondar(distanciaDeP1aP0, NUMERO_DE_CASAS_DECIMAIS),"\n")
 	}
 }
@@ -32,7 +32,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 743; 
+ * @POSICAO-CURSOR = 650; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
