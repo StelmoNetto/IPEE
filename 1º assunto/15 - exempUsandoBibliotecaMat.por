@@ -4,6 +4,7 @@ programa
 	funcao inicio()
 	{
 		// Programa calcula a distância entre os pontos p1 (x1,y1) e p0(x0,y0):
+		const inteiro NUMERO_DE_CASAS_DECIMAIS = 2
 		//Entradas:
 		real x0, y0, x1, y1
 		//Saídas:
@@ -20,19 +21,18 @@ programa
 		distanciaDeP1aP0 = Mt.raiz((x1 - x0) * (x1 - x0) + Mt.potencia(y1 - y0,2.0), 2.0)
 		
 		//Saída via tela
-		escreva("A distância entre os pontos p1 (",x1,",",y1,") e p0(",x0,",",y0,") é: ", distanciaDeP1aP0,"\n")
+		escreva("A distância(p1<",x1,",",y1,">,p0<",x0,",",y0,">) = ", distanciaDeP1aP0,"\n")
 
-		//Saída com arredondamento de duas casas decimais
-		escreva("A distância entre os pontos p1 (",x1,",",y1,") e p0(",x0,",",y0,") é: ", Mt.arredondar(distanciaDeP1aP0, 2))
+		//Saída com arredondamento de duas casas decimais		
+		escreva("A distância(p1<",x1,",",y1,">,p0<",x0,",",y0,">) = ", Mt.arredondar(distanciaDeP1aP0,NUMERO_DE_CASAS_DECIMAIS))
 	}
 }
-
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 52; 
+ * @POSICAO-CURSOR = 858; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
