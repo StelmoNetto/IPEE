@@ -15,13 +15,15 @@ programa
 		//Usando a função que calcula o módulo da biblioteca Matematica
 		//satisfazInequacao = mt.valor_absoluto(x + a) > b
 
+		escreva("A inequação: |",x," + ",a,"| > ",b)
+
 		se(satisfazInequacao)		
 		{
-			escreva("Satisfaz a desigualdade modular\n")
+			escreva(" é satisfeita\n")
 		}
 		senao
 		{
-			escreva("Não satisfaz a desigualdade modular\n")
+			escreva(" não é satisfeita\n")
 		}
 	}
 }
@@ -30,7 +32,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 241; 
+ * @POSICAO-CURSOR = 576; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
