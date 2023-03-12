@@ -9,11 +9,11 @@ programa
 
 		se((a >= b) e (a <= c))
   		{
-  			escreva("A esta entre B e C\n")
+  			escreva("A ∈ [B,C]\n")
   		}
 		senao
   		{
-  			escreva("A nao esta entre B e C\n")
+  			escreva("A ∉ [B,C]\n")
   		}		
 	}
 }
@@ -22,7 +22,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 37; 
+ * @POSICAO-CURSOR = 203; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

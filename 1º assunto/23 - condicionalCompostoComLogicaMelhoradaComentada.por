@@ -24,11 +24,11 @@ programa
 		//Verificando se a está entre b e c.
 		se(valorDeAEstaNoIntervaloBC)
   		{
-  			escreva("A esta entre B e C\n")
+  			escreva("A ∈ [B,C]\n")
   		}
 		senao
   		{
-  			escreva("A nao esta entre B e C\n")
+  			escreva("A ∉ [B,C]\n")
   		}		
 	}
 }
@@ -37,7 +37,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 275; 
+ * @POSICAO-CURSOR = 631; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
