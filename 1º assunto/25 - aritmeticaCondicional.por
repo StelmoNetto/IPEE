@@ -9,20 +9,20 @@ programa
 
 		se(nao(c > 5))
 		{
-  			escreva (a + b,"\n")
+  			escreva ("a + b = ",a," + ",b," = ",a + b,"\n")
 		}
 		senao
 		{
-			escreva (a - b,"\n")
+			escreva ("a - b = ",a," - ",b," = ",a - b,"\n")
 		}
 	}
 }
 /* $$$ Portugol Studio $$$ 
  * 
- * Esta seção do arquivo guarda informações do Portugol Studio.
- * Você pode apagá-la se estiver utilizando outro editor.
+ * Esta seÃ§Ã£o do arquivo guarda informaÃ§Ãµes do Portugol Studio.
+ * VocÃª pode apagÃ¡-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 201; 
+ * @POSICAO-CURSOR = 217; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
