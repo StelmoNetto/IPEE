@@ -1,19 +1,21 @@
 programa {
 	funcao inicio() {
 		//Declaração e entrada de dados
-		real a = 3.0, b = 2.0, aux
+		real a = 3.0, b = 2.0, copiaDeA
+
+		escreva("Antes da troca:\n a:",a," b:", b,"\n")
 		
 		se(a > b)//Se em ordem descrescente
 		{
 		    //Coloque em ordem crescente através da:
 		    //Troca
-		    aux = a
+		    copiaDeA = a
 		    a = b
-		    b = aux
+		    b = copiaDeA
 		}
 
 		//Saída						
-		escreva("a:",a," b:", b)
+		escreva("Após a troca:\n a:",a," b:", b)
 		
 	}
 }
@@ -23,7 +25,7 @@ programa {
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 85; 
+ * @POSICAO-CURSOR = 147; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
