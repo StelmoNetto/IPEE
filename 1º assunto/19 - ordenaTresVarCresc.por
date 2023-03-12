@@ -1,35 +1,37 @@
 programa {
 	funcao inicio() {
 		//Entrada
-		real a = 2.6, b = 1.0, c = 2.0, aux
+		real a = 2.6, b = 1.0, c = 2.0, copia
+
+		escreva("Desordenados:\n a:",a," b:", b, " c:", c,"\n")
 
 		//Processamento: ordenação
 		se(a > b)
 		{
 			//Troca
-			aux = a
+			copia = a
 		     a = b
-		     b = aux
+		     b = copia
 		}
 
 		se(a > c)
 		{
 			//Troca
-		     aux = a
+		     copia = a
 		     a = c
-		     c = aux			
+		     c = copia			
 		}		
 				
 		se(b > c)
 		{
 			//Troca
-		     aux = b
+		     copia = b
 		     b = c
-		     c = aux
+		     c = copia
 		}
 
 		//Saída: a <= b <= c
-		escreva("a:",a," b:", b, " c:", c)
+		escreva("Ordenados:\n ",a," <= ", b, " <= ", c)
 		
 	}
 }
@@ -39,7 +41,7 @@ programa {
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 63; 
+ * @POSICAO-CURSOR = 76; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
