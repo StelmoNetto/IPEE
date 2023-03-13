@@ -22,7 +22,7 @@ programa
 			pare
 
 			caso 'V':
-			escreva("Viuvo\n")
+			escreva("Viúvo\n")
 			pare
 
 			caso contrario:
@@ -35,7 +35,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 42; 
+ * @POSICAO-CURSOR = 318; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
