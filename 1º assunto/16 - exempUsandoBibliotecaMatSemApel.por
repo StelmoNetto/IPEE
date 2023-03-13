@@ -3,7 +3,7 @@ programa
 	inclua biblioteca Matematica
 	funcao inicio()
 	{
-		// Programa calcula a distância entre os pontos p1 (x1,y1) e p0(x0,y0):
+		// Programa calcula a distância entre os pontos p1<x1,y1> e p0<x0,y0>:
 		
 		//Entradas:
 		const inteiro NUMERO_DE_CASAS_DECIMAIS = 2
@@ -32,7 +32,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 650; 
+ * @POSICAO-CURSOR = 132; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

@@ -1,9 +1,9 @@
 programa
 {
-	inclua biblioteca Matematica --> Mt //Mt é um apelido para a biblioteca
+	inclua biblioteca Matematica --> Mt //Mt é um apelido para a biblioteca Matemática
 	funcao inicio()
 	{
-		// Programa calcula a distância entre os pontos p1 (x1,y1) e p0(x0,y0):
+		// Programa calcula a distância entre os pontos p1<x1,y1> e p0<x0,y0>:
 		const inteiro NUMERO_DE_CASAS_DECIMAIS = 2
 		//Entradas:
 		real x0, y0, x1, y1
@@ -32,7 +32,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 858; 
+ * @POSICAO-CURSOR = 186; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
