@@ -26,7 +26,7 @@ programa
 			contagemDeIteracoes++
 		}
 
-		escreva("O somatórios do quadrados dos x's é: ", Mt.arredondar(somatorio, 2))	
+		escreva("∑(xi)² = ", Mt.arredondar(somatorio, 2))	
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -34,7 +34,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 128; 
+ * @POSICAO-CURSOR = 648; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
