@@ -15,7 +15,7 @@ programa
 			contagemDeIteracoes++
 		}
 
-		escreva("O somatório dos quadrados de x é: ", somatorio)	
+		escreva("(x1)² + (x2)² + (x3)² = ", somatorio)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -23,7 +23,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 47; 
+ * @POSICAO-CURSOR = 246; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
