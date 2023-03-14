@@ -14,7 +14,7 @@ programa
 			contagemDeIteracoes++
 		}
 
-		escreva("O resultado de x1 + x2 + x3 é: ", somatorio)	
+		escreva("x1 + x2 + x3 = ", somatorio)	
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -22,7 +22,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 89; 
+ * @POSICAO-CURSOR = 280; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
