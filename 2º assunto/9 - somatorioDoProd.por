@@ -8,9 +8,9 @@ programa
 
 		para(i = 1; i <= 37; i++)
 		{
-			s+= (38 - i) * (39 - i) / i
+			s+= (38.0 - i) * (39.0 - i) / i
 		}
-		escreva("Somatória S = ",s)
+		escreva("s = ∑(38.0 - i) * (39.0 - i) / i = ",s,", i = 1, ..., 37")
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -18,7 +18,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 52; 
+ * @POSICAO-CURSOR = 184; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
