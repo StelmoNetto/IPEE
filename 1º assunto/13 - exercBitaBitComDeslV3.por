@@ -4,7 +4,7 @@ programa
 	funcao inicio()
 	{
 		const inteiro TEMPO_DE_ESPERA_MS = 2000 //milissegundos
-		const inteiro POSICAO_DO_BIT_LAMPADA_QUEIMADA = 3 //4º bit
+		const inteiro POSICAO_DO_BIT_DE_LAMPADA_QUEIMADA = 3 //4º bit
 		const inteiro POSICAO_DO_BIT_DE_COMANDAR_INTERRUPTOR = 5 //6º bit
 		const inteiro LIGADO = 1
 		const inteiro QUEIMADO = 1
@@ -25,7 +25,7 @@ programa
 
 		inteiro ligarLampada = bitSelecionado
 
-		bitSelecionado = ((registro >> POSICAO_DO_BIT_LAMPADA_QUEIMADA) & 1)
+		bitSelecionado = ((registro >> POSICAO_DO_BIT_DE_LAMPADA_QUEIMADA) & 1)
 		lampadaEstaQueimada = bitSelecionado == QUEIMADO
 		escreva("Lâmpada está queimada? ",lampadaEstaQueimada,"\n\n")
 
@@ -50,7 +50,7 @@ programa
 		bitSelecionado = ((registro >> POSICAO_DO_BIT_DE_COMANDAR_INTERRUPTOR) & 1)
 		ligarLampada = bitSelecionado
 
-		bitSelecionado = ((registro >> POSICAO_DO_BIT_LAMPADA_QUEIMADA) & 1)
+		bitSelecionado = ((registro >> POSICAO_DO_BIT_DE_LAMPADA_QUEIMADA) & 1)
 		lampadaQueimada = bitSelecionado
 
 		escreva("Estado do registro:\n")
@@ -68,7 +68,7 @@ programa
 		bitSelecionado = ((registro >> POSICAO_DO_BIT_DE_COMANDAR_INTERRUPTOR) & 1)
 		ligarLampada = bitSelecionado
 
-		bitSelecionado = ((registro >> POSICAO_DO_BIT_LAMPADA_QUEIMADA) & 1)
+		bitSelecionado = ((registro >> POSICAO_DO_BIT_DE_LAMPADA_QUEIMADA) & 1)
 		lampadaQueimada = bitSelecionado
 
 		escreva("Estado do registro:\n")
@@ -91,7 +91,7 @@ programa
 		bitSelecionado = ((registro >> POSICAO_DO_BIT_DE_COMANDAR_INTERRUPTOR) & 1)
 		ligarLampada = bitSelecionado
 
-		bitSelecionado = ((registro >> POSICAO_DO_BIT_LAMPADA_QUEIMADA) & 1)
+		bitSelecionado = ((registro >> POSICAO_DO_BIT_DE_LAMPADA_QUEIMADA) & 1)
 		lampadaQueimada = bitSelecionado
 
 		escreva("Estado do registro:\n")
@@ -105,7 +105,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 2914; 
+ * @POSICAO-CURSOR = 136; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
