@@ -10,8 +10,8 @@ programa
 			escreva ("Entre com o valor de x",contagemDeIteracoes,"\n")
 			leia(x)
 			
-			somatorio+= x
-			contagemDeIteracoes++
+			somatorio+= x //somatorio = somatorio + x
+			contagemDeIteracoes++ //contagemDeIteracoes = contagemDeIteracoes + 1
 		}
 
 		escreva("x1 + x2 + x3 = ", somatorio)	
@@ -22,7 +22,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 280; 
+ * @POSICAO-CURSOR = 325; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
