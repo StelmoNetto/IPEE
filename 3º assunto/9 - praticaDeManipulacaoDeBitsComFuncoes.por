@@ -1,8 +1,9 @@
 programa
 {
 	const inteiro LSB = 1 //posição
-	const inteiro LSB_ATIVO = 1 //valor da posição
-	const inteiro LSB_LIMPO = 0 //valor da posição
+	const inteiro ATIVO = 1
+	const inteiro NIBBLE = 4		
+	const inteiro DOUBLE_WORD = 32			
 	
 	funcao inteiro isolaNesimoBit(inteiro numero,inteiro posicaoDoBit)
 	{		
@@ -18,10 +19,6 @@ programa
 
 	funcao exibirBinario(inteiro numero)
 	{
-		const inteiro NIBBLE = 4		
-		const inteiro DOUBLE_WORD = 32
-		const inteiro ATIVO = 1
-
 		logico iniciarExibicao = falso
 		
 		inteiro posicaoDeSelecaoDoBit = DOUBLE_WORD - 1
@@ -96,7 +93,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 107; 
+ * @POSICAO-CURSOR = 293; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
