@@ -11,35 +11,28 @@ programa
 		
 		escreva("Esse programa calcula o produto escalar entre dois vetores\n")
 
-		se(NUMERO_DE_ELEMENTOS > 0)
-		{		
-			escreva("Entre com os ", NUMERO_DE_ELEMENTOS, " elementos do 1º vetor\n")
-			para(i = 0; i < NUMERO_DE_ELEMENTOS; i++)
-			{
-				escreva("Forneça o ",i + 1, "º elemento\n")
-				leia(vetorA[i])
-			}
-	
-			escreva("Entre com os ", NUMERO_DE_ELEMENTOS, " elementos do 2º vetor\n")
-			para(i = 0; i < NUMERO_DE_ELEMENTOS; i++)
-			{
-				escreva("Forneça o ",i + 1, "º elemento\n")
-				leia(vetorB[i])
-			}
-			
-	
-			//Cálculo do produto escalar		
-			para(i = 0; i < NUMERO_DE_ELEMENTOS; i++)
-			{
-				somatorioDosProdutosDasComponentes+= vetorA[i] * vetorB[i] //somatorioDosProdutosDasComponentes = somatorioDosProdutosDasComponentes + vetorA[i] * vetorB[i]
-			}
-			real produtoEscalar = mt.arredondar(somatorioDosProdutosDasComponentes,PRECISAO)
-			escreva("O produto escalar é igual a ", produtoEscalar)
-		}
-		senao
+		escreva("Entre com os ", NUMERO_DE_ELEMENTOS, " elementos do 1º vetor\n")
+		para(i = 0; i < NUMERO_DE_ELEMENTOS; i++)
 		{
-			escreva("Número incorreto de elementos do vetor\n")
+			escreva("Forneça o ",i + 1, "º elemento\n")
+			leia(vetorA[i])
 		}
+
+		escreva("Entre com os ", NUMERO_DE_ELEMENTOS, " elementos do 2º vetor\n")
+		para(i = 0; i < NUMERO_DE_ELEMENTOS; i++)
+		{
+			escreva("Forneça o ",i + 1, "º elemento\n")
+			leia(vetorB[i])
+		}
+		
+
+		//Cálculo do produto escalar		
+		para(i = 0; i < NUMERO_DE_ELEMENTOS; i++)
+		{
+			somatorioDosProdutosDasComponentes+= vetorA[i] * vetorB[i] //somatorioDosProdutosDasComponentes = somatorioDosProdutosDasComponentes + vetorA[i] * vetorB[i]
+		}
+		real produtoEscalar = mt.arredondar(somatorioDosProdutosDasComponentes,PRECISAO)
+		escreva("O produto escalar é igual a ", produtoEscalar)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -47,7 +40,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 115; 
+ * @POSICAO-CURSOR = 1118; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
