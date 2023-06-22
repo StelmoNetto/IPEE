@@ -12,7 +12,7 @@ programa
 
 	funcao logico ehPotenciaDe2(inteiro numero)
 	{
-		logico ehPotDe2 = (numero != 0) e nao((numero & (numero - 1)) != 0)
+		logico ehPotDe2 = (numero != 0) e ((numero & (numero - 1)) == 0)
 		retorne ehPotDe2
 	}	
 	
@@ -97,7 +97,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 898; 
+ * @POSICAO-CURSOR = 1754; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
