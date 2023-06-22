@@ -1,13 +1,13 @@
 programa
 {
-	funcao calculaCorrenteDoCircuito(real tensao, real r1, real r2, real& correnteDoCircuito)
+	funcao calculaCorrenteDoCircuito(real tensaoEmVolts, real r1, real r2, real& correnteDoCircuitoEmAmpere)
 	{
-		correnteDoCircuito = tensao / (r1 + r2)
+		correnteDoCircuitoEmAmpere = tensaoEmVolts / (r1 + r2)
 	}
 		
-	funcao rompeuFusivel(real correnteDoCircuito, real correnteMax, logico& rompeu)
+	funcao rompeuFusivel(real correnteDoCircuitoEmAmpere, real correnteMaximaEmAmpere, logico& rompeu)
 	{
-		rompeu = correnteDoCircuito >= correnteMax //rompeu?
+		rompeu = correnteDoCircuitoEmAmpere >= correnteMaximaEmAmpere //rompeu?
 	}	
 
 	funcao desenhoDoCircuitoNoConsole()
@@ -23,31 +23,33 @@ programa
 		desenhoDoCircuitoNoConsole()
 	}
 
-	funcao apresentacaoDosResultados(real correnteDoCircuito, real correnteMaximaDoFusivel, real vR1, real vR2)
+	funcao apresentacaoDosResultados(real correnteDoCircuitoEmAmpere, real correnteMaximaDoFusivelEmAmpere, real tensaoDoResistor1EmVolts, real tensaoDoResistor2EmVolts)
 	{
-		escreva("Fusível não rompeu, pois a corrente do circuito é ",correnteDoCircuito," A e máxima permitida é de: ",correnteMaximaDoFusivel, "A\n")
-		escreva("As tensões são: ", vR1, " V em r1 e ", vR2, " V em r2\n")
+		escreva("Fusível não rompeu:\n A corrente do circuito = ",correnteDoCircuitoEmAmpere," A < corrente máxima permitida = ",correnteMaximaDoFusivelEmAmpere, " A\n")
+		escreva(" As tensões são: ", tensaoDoResistor1EmVolts, " V em r1 e ", tensaoDoResistor2EmVolts, " V em r2\n")
 	}
 	
 	funcao inicio()
 	{
 		const real CORRENTE_MAXIMA_DO_FUSIVEL_EM_AMPERE = 5.1
-		real tensaoNoCircuito = 10.0, correnteDoCircuito = 0.0
-		real r1 = 1.0, r2 = 1.0, vR1 = 0.0, vR2 = 0.0
+		real tensaoNoCircuitoEmVolts = 10.0, correnteDoCircuitoEmAmpere = 0.0
+		real r1EmOhm = 1.0, r2EmOhm = 1.0
+		real tensaoDeR1EmVolts = 0.0, tensaoDeR2EmVolts = 0.0
 		logico rompeu = falso
 
 		mensagemInformativaDoProblema()
 		
-		calculaCorrenteDoCircuito(tensaoNoCircuito,r1,r2,correnteDoCircuito)
-		rompeuFusivel(correnteDoCircuito,CORRENTE_MAXIMA_DO_FUSIVEL_EM_AMPERE,rompeu)
+		calculaCorrenteDoCircuito(tensaoNoCircuitoEmVolts,r1EmOhm,r2EmOhm,correnteDoCircuitoEmAmpere)
+		
+		rompeuFusivel(correnteDoCircuitoEmAmpere,CORRENTE_MAXIMA_DO_FUSIVEL_EM_AMPERE,rompeu)
 
 		se(nao rompeu)
 		{
-			vR1 = correnteDoCircuito * r1
+			tensaoDeR1EmVolts = correnteDoCircuitoEmAmpere * r1EmOhm
 	
-			vR2 = correnteDoCircuito * r2		
+			tensaoDeR2EmVolts = correnteDoCircuitoEmAmpere * r2EmOhm		
 
-			apresentacaoDosResultados(correnteDoCircuito,CORRENTE_MAXIMA_DO_FUSIVEL_EM_AMPERE,vR1,vR2)
+			apresentacaoDosResultados(correnteDoCircuitoEmAmpere,CORRENTE_MAXIMA_DO_FUSIVEL_EM_AMPERE,tensaoDeR1EmVolts,tensaoDeR2EmVolts)
 		}
 		senao
 		{
@@ -60,8 +62,8 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 980; 
- * @PONTOS-DE-PARADA = 41;
+ * @POSICAO-CURSOR = 1130; 
+ * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
