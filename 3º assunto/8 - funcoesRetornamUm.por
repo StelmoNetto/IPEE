@@ -5,7 +5,7 @@ programa
 		retorne 1.0 //literal
 	}
 
-	funcao real retornaValorUmNaVariavel()
+	funcao real retornaValorUmDaVariavel()
 	{
 		real resultado = 1.0
 		retorne resultado
@@ -16,7 +16,7 @@ programa
 		real valorRetornado = retornaValorUm()
 		escreva(valorRetornado,"\n")
 		
-		valorRetornado = retornaValorUmNaVariavel()
+		valorRetornado = retornaValorUmDaVariavel()
 		escreva(valorRetornado,"\n")
 	}
 }
@@ -25,7 +25,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 159; 
+ * @POSICAO-CURSOR = 85; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
