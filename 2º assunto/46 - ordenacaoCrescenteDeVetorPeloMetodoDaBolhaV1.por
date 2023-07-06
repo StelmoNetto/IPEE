@@ -21,9 +21,8 @@ programa
 				logico elementosComparadosEstaoEmOrdemDescrescente = elementoDeReferencia > possivelElementoForaDeOrdem
 				se(elementosComparadosEstaoEmOrdemDescrescente)				
 				{
-					real copiaDoElementoForaDeOrdem = possivelElementoForaDeOrdem
 					vetor[posicaoDoPossivelElementoForaDeOrdem] = elementoDeReferencia
-					vetor[posicaoDaReferencia] = copiaDoElementoForaDeOrdem
+					vetor[posicaoDaReferencia] = possivelElementoForaDeOrdem
 				}
 			}
 		}
@@ -38,7 +37,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 993; 
+ * @POSICAO-CURSOR = 1300; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
