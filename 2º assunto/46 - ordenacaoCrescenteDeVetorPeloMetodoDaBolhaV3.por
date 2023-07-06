@@ -24,9 +24,8 @@ programa
 				logico elementosComparadosEstaoEmOrdemDescrescente = elementoDeReferencia > elementoAposReferencia
 				se(elementosComparadosEstaoEmOrdemDescrescente)
 				{
-					real copiaDoElementoDeReferencia = elementoDeReferencia
 					vetor[posicaoDaReferencia] = elementoAposReferencia
-					vetor[posicaoDoElementoAposReferencia] = copiaDoElementoDeReferencia
+					vetor[posicaoDoElementoAposReferencia] = elementoDeReferencia
 					
 					existeElementoForaDeOrdem = verdadeiro
 				}
@@ -44,7 +43,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 257; 
+ * @POSICAO-CURSOR = 985; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
