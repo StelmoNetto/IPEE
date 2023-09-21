@@ -2,29 +2,32 @@ programa
 {
 	funcao inicio()
 	{
-		inteiro s,a,b
+		real soma,a,b
 		
 		escreva("Entre com o valor de A e B \n")
 		
 		leia(a,b)
 
-		s = a + b
+		soma = a + b
 
-		se (s >= 10)
-			escreva("O valor da soma + 5 e:", s + 5)
+		se (soma >= 10)
+		{
+			escreva("soma + 5 = ", soma, " + 5 = " , soma + 5)
+		}
 		senao
-			escreva ("O valor da soma - 7 e:", s - 7)
-		
+		{
+			escreva("soma - 7 = ", soma, " - 7 = ", soma - 7)
+		}		
 	}
 }
 /* $$$ Portugol Studio $$$ 
  * 
- * Esta seção do arquivo guarda informações do Portugol Studio.
- * Você pode apagá-la se estiver utilizando outro editor.
+ * Esta seÃ§Ã£o do arquivo guarda informaÃ§Ãµes do Portugol Studio.
+ * VocÃª pode apagÃ¡-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 248; 
+ * @POSICAO-CURSOR = 280; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {s, 5, 10, 1}-{a, 5, 12, 1}-{b, 5, 14, 1};
+ * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
