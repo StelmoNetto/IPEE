@@ -2,26 +2,26 @@ programa
 {
 	funcao inicio()
 	{
-		real s,a,b
+		real soma,a,b
 		
 		escreva("Entre com o valor de A e B \n")
 		leia(a,b)
 
-		s = a + b
+		soma = a + b
 
-		se (s > 10.0)
+		se (soma > 10.0)
 		{
-			escreva("A soma de A= ",a," com B= ",b," e: ",s)
+			escreva("A + B = ", a, " + ", b, " = ", soma)
 		}
 	}
 }
 
 /* $$$ Portugol Studio $$$ 
  * 
- * Esta seção do arquivo guarda informações do Portugol Studio.
- * Você pode apagá-la se estiver utilizando outro editor.
+ * Esta seÃ§Ã£o do arquivo guarda informaÃ§Ãµes do Portugol Studio.
+ * VocÃª pode apagÃ¡-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 203; 
+ * @POSICAO-CURSOR = 8; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
