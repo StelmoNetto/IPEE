@@ -17,8 +17,7 @@ programa
 
 		se (somaMaiorQueLimiar)
 		{
-			//escreva("A soma de A = ",a," com B = ",b," é igual a ",soma)
-			escreva("O resultado de A (= ",a,") + B (= ",b,") = ",soma)
+			escreva("A + B = ",a," + ",b," = ",soma)
 		}
 	}
 }
@@ -28,7 +27,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 171; 
+ * @POSICAO-CURSOR = 8; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
