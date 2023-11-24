@@ -1,6 +1,6 @@
 programa
 {
-	funcao real calcEnergiaEmWh(real potenciaDoAparelho, real tempoDeUsoEmHoras, inteiro numeroDeDiasDeUso)
+	funcao real calcularEnergiaEmWh(real potenciaDoAparelho, real tempoDeUsoEmHoras, inteiro numeroDeDiasDeUso)
 	{
 		retorne potenciaDoAparelho * tempoDeUsoEmHoras * numeroDeDiasDeUso
 	}
@@ -14,7 +14,7 @@ programa
 		//escreva("A energia calculada no mês é: ", calcEnergiaEmWh(pot,hrs,dias), " Wh")
 		escreva("Um aparelho de ",potenciaEmW, " W de potência ")
 		escreva("utilizado em ", numeroDeDiasDeUso, " dias e por ",horasDeUso," horas de uso\n")
-		escreva("Consome a energia de: ", calcEnergiaEmWh(potenciaEmW,horasDeUso,numeroDeDiasDeUso) / 1000.0," kWh\n")		
+		escreva("Consome a energia de: ", calcularEnergiaEmWh(potenciaEmW,horasDeUso,numeroDeDiasDeUso) / 1000.0," kWh\n")		
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -22,7 +22,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 445; 
+ * @POSICAO-CURSOR = 24; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
