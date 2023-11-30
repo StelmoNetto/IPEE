@@ -2,17 +2,20 @@ programa
 {
 	funcao trocaValores(real& a, real& b)
 	{
-		real aux = a
+		real copiaDeA = a
 		a = b
-		b = aux
+		b = copiaDeA
 	}
 	
 	funcao inicio()
 	{
 		real a = 2.0, b = 1.0
-		escreva("O valor de A = ",a, " e B = ",b,"\n")
+
+		escreva("Antes da troca:\n A = ",a, " e B = ",b,"\n")
+
 		trocaValores(a,b)
-		escreva("O valor de A = ",a, " e B = ",b)
+
+		escreva("Depois da troca:\n A = ",a, " e B = ",b)
 	}
 }
 /* $$$ Portugol Studio $$$ 
