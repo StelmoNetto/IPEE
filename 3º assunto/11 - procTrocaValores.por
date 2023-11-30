@@ -1,6 +1,6 @@
 programa
 {
-	funcao trocaValores(real& a, real& b)
+	funcao trocarValores(real& a, real& b)
 	{
 		real copiaDeA = a
 		a = b
@@ -9,13 +9,13 @@ programa
 	
 	funcao inicio()
 	{
-		real a = 2.0, b = 1.0
+		real valorDeA = 2.0, valorDeB = 1.0
 
-		escreva("Antes da troca:\n A = ",a, " e B = ",b,"\n")
+		escreva("Antes da troca:\n A = ",valorDeA, " e B = ",valorDeB,"\n")
 
-		trocaValores(a,b)
+		trocarValores(valorDeA,valorDeB)
 
-		escreva("Depois da troca:\n A = ",a, " e B = ",b)
+		escreva("Depois da troca:\n A = ",valorDeA, " e B = ",valorDeB)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -23,7 +23,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 182; 
+ * @POSICAO-CURSOR = 19; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
