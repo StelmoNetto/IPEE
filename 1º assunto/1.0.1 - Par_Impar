@@ -1,0 +1,14 @@
+//EXEMPLO USANDO NUMERO PAR E IMPAR
+
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro valor = 6
+		
+		logico valorPar = (valor % 2) == 0
+		
+		escreva(valor, " é par? ", valorPar)
+	}
+}
