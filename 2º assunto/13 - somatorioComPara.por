@@ -10,7 +10,7 @@ programa
 			leia(x)
 			somatorio+= x
 		}
-		escreva("O resultado de x1 + x2 + x3 é: ", somatorio)
+		escreva("x1 + x2 + x3 = ", somatorio)
 	}
 }
 /* $$$ Portugol Studio $$$ 
