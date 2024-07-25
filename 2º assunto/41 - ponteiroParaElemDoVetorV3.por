@@ -1,13 +1,13 @@
 programa
 {
-	inclua biblioteca Util --> ut
+	inclua biblioteca Util --> Ut
 	
 	funcao inicio()
 	{
 		real vetor[] = {-1.0, 2.0, -2.0, 1.2, 0.0, 4.1, 5.2}
 		inteiro ponteiros[] = {1,0,7,-1} //aponta para elementos no vetor
-		inteiro numeroDeElementosDePonteiro = ut.numero_elementos(ponteiros)
-		inteiro numeroDeElementosDeVetor = ut.numero_elementos(vetor)
+		inteiro numeroDeElementosDePonteiro = Ut.numero_elementos(ponteiros)
+		inteiro numeroDeElementosDeVetor = Ut.numero_elementos(vetor)
 
 		escreva("Elementos apontados pelo vetor de ponteiros\n")
 		para(inteiro i = 0; i < numeroDeElementosDePonteiro; i++)
