@@ -1,27 +1,27 @@
 programa
 {
-	inclua biblioteca Matematica --> mt
-	inclua biblioteca Util --> ut
+	inclua biblioteca Matematica --> Mt
+	inclua biblioteca Util --> Ut
 	
 	funcao inicio()
 	{
 		real vetor[] = {-1.0, 2.0, -2.0, 1.2, 0.0, 4.1}
 
-		inteiro i, numeroDeElementosDoVetor = ut.numero_elementos(vetor) //Obtem o número de elementos do vetor
+		inteiro i, numeroDeElementosDoVetor = Ut.numero_elementos(vetor) //Obtem o número de elementos do vetor
 		
 		escreva("O módulo dos elementos do vetor\n")
 		para(i = 0; i < numeroDeElementosDoVetor; i++)
 		{
-			escreva(mt.valor_absoluto(vetor[i])," ")
+			escreva("|",vetor[i],"| = ", Mt.valor_absoluto(vetor[i]),"\n")
 		}
 
-		escreva("\nO logarítmo dos elementos do vetor\n")
+		escreva("\nO logarítmo dos elementos do vetor:\n")
 		para(i = 0; i < numeroDeElementosDoVetor; i++)
 		{
 			se(vetor[i] > 0)
 			{				
-				//escreva("O logarítmo na base 10 de ",v[i]," é: ", mt.logaritmo(v[i], 10.0),"\n")
-				escreva("O logarítmo na base 10 de ",vetor[i]," é: ", mt.arredondar(mt.logaritmo(vetor[i], 10.0), 3),"\n")
+				//escreva("log10(",vetor[i],") = ", Mt.logaritmo(v[i], 10.0),"\n")
+				escreva("log10(",vetor[i],") = ", Mt.arredondar(Mt.logaritmo(vetor[i], 10.0), 3),"\n")
 			}
 			senao
 			{
