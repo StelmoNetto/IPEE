@@ -2,8 +2,8 @@ programa
 {
 	funcao inicio()
 	{
-		const inteiro NUMERODELINHAS = 2, NUMERODECOLUNAS = 3		
-		real matriz[NUMERODELINHAS][NUMERODECOLUNAS] = {{3.4, 1.2, 5.3}, {1.2, 5.1, 5.3}}
+		const inteiro NUMERO_DE_LINHAS = 2, NUMERO_DE_COLUNAS = 3		
+		real matriz[NUMERO_DE_LINHAS][NUMERO_DE_COLUNAS] = {{3.4, 1.2, 5.3}, {1.2, 5.1, 5.3}}
 		real valorProcurado
 		logico encontrado = falso
 		inteiro linhaDoElementoProcurado = -1, colunaDoElementoProcurado = -1
@@ -12,9 +12,9 @@ programa
 		leia(valorProcurado)
 		
 		//Busca da linha e coluna da 1ª ocorrência de valorProcurado na matriz
-		para(inteiro linha = 0; linha < NUMERODELINHAS e nao(encontrado); linha++)
+		para(inteiro linha = 0; linha < NUMERO_DE_LINHAS e nao(encontrado); linha++)
 		{
-			para(inteiro coluna = 0; coluna < NUMERODECOLUNAS e nao(encontrado); coluna++)
+			para(inteiro coluna = 0; coluna < NUMERO_DE_COLUNAS e nao(encontrado); coluna++)
 			{
 				encontrado = valorProcurado == matriz[linha][coluna]
 				se(encontrado)
