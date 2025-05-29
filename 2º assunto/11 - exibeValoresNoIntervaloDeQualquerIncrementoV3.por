@@ -42,15 +42,15 @@ programa
 			}						
 		}enquanto(eIncrementoIncorreto)
 
-		inteiro contaInteracoes = 1
+		inteiro contaIteracoes = 1
 		logico noIntervalo = falso
 		valor = limiteInferior
 
 		faca
 		{
-			escreva(contaInteracoes, "º Valor = ",Mt.arredondar(valor, NUMERO_DE_CASAS_DECIMAIS),"\n")
+			escreva(contaIteracoes, "º Valor = ",Mt.arredondar(valor, NUMERO_DE_CASAS_DECIMAIS),"\n")
 			valor+= incremento
-			contaInteracoes++
+			contaIteracoes++
 			
 			noIntervalo = (limiteInferior < limiteSuperior e valor <= limiteSuperior) ou (limiteInferior > limiteSuperior e valor >= limiteSuperior)
 		}enquanto(noIntervalo)
