@@ -2,13 +2,14 @@ programa
 {
 	funcao lerVetor(real vetor[], inteiro tamanho)
 	{
+		escreva("Entre com o vetor[",tamanho,"]:\n")
 		para(inteiro i = 0; i < tamanho; i++)
 		{
 			leia(vetor[i])
 		}
 	}
 
-	funcao escreverVetor(real vetor[], inteiro tamanho)
+	funcao exibirVetor(real vetor[], inteiro tamanho)
 	{
 		para(inteiro i = 0; i < tamanho; i++)
 		{
@@ -17,14 +18,15 @@ programa
 		escreva("\n")
 	}
 
-	funcao real calcularProdutoEscalar(real vetor1[], real vetor2[], inteiro tamanho)
+	funcao real produtoEscalar(real vetor1[], real vetor2[], inteiro tamanho)
 	{
-		real produtoEscalar = 0.0
+		real escalar = 0.0
 		para(inteiro i = 0; i < tamanho; i++)
 		{
-			produtoEscalar+= vetor1[i] * vetor2[i]
+			escalar+= vetor1[i] * vetor2[i]
 		}
-		retorne produtoEscalar
+
+		retorne escalar
 	}
 	
 	funcao inicio()
@@ -38,19 +40,7 @@ programa
 		escreva("Entre com os ",NUMERO_DE_ELEMENTOS," elementos do vetor 2\n")
 		lerVetor(vetor2,NUMERO_DE_ELEMENTOS)
 
-		real produtoEscalar = calcularProdutoEscalar(vetor1,vetor2,NUMERO_DE_ELEMENTOS)		
-		escreva("O produto escalar é ",produtoEscalar)		
+		real resultadoDoProdutoEscalar = produtoEscalar(vetor1,vetor2,NUMERO_DE_ELEMENTOS)		
+		escreva("O produto escalar é ",resultadoDoProdutoEscalar)		
 	}
 }
-
-/* $$$ Portugol Studio $$$ 
- * 
- * Esta seção do arquivo guarda informações do Portugol Studio.
- * Você pode apagá-la se estiver utilizando outro editor.
- * 
- * @POSICAO-CURSOR = 551; 
- * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = ;
- * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
- * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
- */
