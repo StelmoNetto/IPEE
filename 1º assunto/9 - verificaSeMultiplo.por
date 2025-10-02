@@ -6,9 +6,9 @@ programa
 		inteiro valor = 3, multiplicidade = 2
 		
 		inteiro restoDaDivisao = valor % multiplicidade
-		logico ehMultiplo = restoDaDivisao == 0
+		logico eMultiplo = restoDaDivisao == 0
 
-		escreva("É ",ehMultiplo," que ",valor," é múltiplo de ",multiplicidade)
+		escreva("É ",eMultiplo," que ",valor," é múltiplo de ",multiplicidade)
 	}
 }
 /* $$$ Portugol Studio $$$ 
