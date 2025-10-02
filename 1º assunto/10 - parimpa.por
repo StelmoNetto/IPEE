@@ -5,9 +5,9 @@ programa
 	{
 		inteiro valor = 6
 		
-		logico valorPar = (valor % 2) == 0
+		logico eValorPar = (valor % 2) == 0
 		
-		escreva(valor, " é par? ", valorPar)
+		escreva(valor, " é par? ", eValorPar)
 	}
 }
 /* $$$ Portugol Studio $$$ 
