@@ -14,14 +14,16 @@ programa
 		
 		//2ª atribua valores às variáveis
 		//Use escreva para informar o que deve ser fornecido como entrada
-		escreva("Entre com a letra inicial e seu primeiro nome\n")
-		leia(primeiraLetraDoNome,nomeDoAluno)
-		
 		escreva("É seu primeiro dia de aula? Digite: verdadeiro/sim e falso/não\n")
 		leia(ehPrimeiroDiaDeAula)
+
+		escreva("Entre com a letra inicial e o seu primeiro nome\n")
+		leia(primeiraLetraDoNome,nomeDoAluno)
+		
 		//continue com o restante da leitura
 		//3ª cálculos ou processamento
 			//Aprendendo ...
+		
 		//4ª saída
 		escreva("Meu nome é ", nomeDoAluno, "\t com inicial (",primeiraLetraDoNome,") e é ", ehPrimeiroDiaDeAula," que é meu primeiro dia de aula\n")
 	}
