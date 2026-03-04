@@ -6,7 +6,7 @@ programa
 		/*Inicie a partir daqui.
 		1ª - declare as variáveis de entrada e saída*/		
 		const real CALOR_ESPECIFICO_DO_SER_HUMANO_EM_J_POR_KGK = 3500.0 //inicialização obrigatória
-		logico ehPrimeiroDiaDeAula
+		logico ePrimeiroDiaDeAula
 		real massaMediaDosAlunosEmKg
 		inteiro numeroDeAlunos
 		cadeia nomeDoAluno
@@ -15,17 +15,16 @@ programa
 		//2ª atribua valores às variáveis
 		//Use escreva para informar o que deve ser fornecido como entrada
 		escreva("É seu primeiro dia de aula? Digite: verdadeiro/sim e falso/não\n")
-		leia(ehPrimeiroDiaDeAula)
+		leia(ePrimeiroDiaDeAula)
 
 		escreva("Entre com a letra inicial e o seu primeiro nome\n")
 		leia(primeiraLetraDoNome,nomeDoAluno)
 		
 		//continue com o restante da leitura
 		//3ª cálculos ou processamento
-			//Aprendendo ...
-		
+			//Aprendendo ...		
 		//4ª saída
-		escreva("Meu nome é ", nomeDoAluno, "\t com inicial (",primeiraLetraDoNome,") e é ", ehPrimeiroDiaDeAula," que é meu primeiro dia de aula\n")
+		escreva("Meu nome é ", nomeDoAluno, "\t com inicial (",primeiraLetraDoNome,") e é ", ePrimeiroDiaDeAula," que é meu primeiro dia de aula\n")
 	}
 }
 
@@ -36,7 +35,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 346; 
+ * @POSICAO-CURSOR = 706; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
