@@ -3,9 +3,10 @@ name: Renumber README Nº column
 on:
   push:
     paths:
-      - 'IPEE/1º assunto/README.md'
-      - 'IPEE/2º assunto/README.md'
-      - 'IPEE/3º assunto/README.md'
+      - '1º assunto/README.md'
+      - '2º assunto/README.md'
+      - '3º assunto/README.md'
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -34,14 +35,14 @@ jobs:
 
           if [ -n "$before_sha" ] && [ "$before_sha" != "0000000000000000000000000000000000000000" ]; then
             files=$(git diff --name-only "$before_sha" "${{ github.sha }}" -- \
-              'IPEE/1º assunto/README.md' \
-              'IPEE/2º assunto/README.md' \
-              'IPEE/3º assunto/README.md' | tr '\n' ' ')
+              '1º assunto/README.md' \
+              '2º assunto/README.md' \
+              '3º assunto/README.md' | tr '\n' ' ')
           else
             files=$(git diff-tree --no-commit-id --name-only -r "${{ github.sha }}" -- \
-              'IPEE/1º assunto/README.md' \
-              'IPEE/2º assunto/README.md' \
-              'IPEE/3º assunto/README.md' | tr '\n' ' ')
+              '1º assunto/README.md' \
+              '2º assunto/README.md' \
+              '3º assunto/README.md' | tr '\n' ' ')
           fi
 
           echo "files=$files" >> "$GITHUB_OUTPUT"
@@ -56,7 +57,7 @@ jobs:
         if: steps.changed.outputs.files != ''
         shell: bash
         run: |
-          if git diff --quiet -- 'IPEE/1º assunto/README.md' 'IPEE/2º assunto/README.md' 'IPEE/3º assunto/README.md'; then
+          if git diff --quiet -- '1º assunto/README.md' '2º assunto/README.md' '3º assunto/README.md'; then
             echo "No changes to commit"
             exit 0
           fi
@@ -64,6 +65,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add 'IPEE/1º assunto/README.md' 'IPEE/2º assunto/README.md' 'IPEE/3º assunto/README.md'
+          git add '1º assunto/README.md' '2º assunto/README.md' '3º assunto/README.md'
           git commit -m "chore: renumber README Nº column"
           git push
