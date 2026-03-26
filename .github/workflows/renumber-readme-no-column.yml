@@ -15,46 +15,29 @@ jobs:
   renumber:
     if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.12'
 
-      - name: Get changed README files
-        id: changed
-        shell: bash
-        run: |
-          before_sha="${{ github.event.before }}"
-
-          if [ -n "$before_sha" ] && [ "$before_sha" != "0000000000000000000000000000000000000000" ]; then
-            files=$(git diff --name-only "$before_sha" "${{ github.sha }}" -- \
-              '1º assunto/README.md' \
-              '2º assunto/README.md' \
-              '3º assunto/README.md' | tr '\n' ' ')
-          else
-            files=$(git diff-tree --no-commit-id --name-only -r "${{ github.sha }}" -- \
-              '1º assunto/README.md' \
-              '2º assunto/README.md' \
-              '3º assunto/README.md' | tr '\n' ' ')
-          fi
-
-          echo "files=$files" >> "$GITHUB_OUTPUT"
-
       - name: Renumber Nº column
-        if: steps.changed.outputs.files != ''
         shell: bash
         run: |
-          python .github/scripts/renumber_readme_table.py ${{ steps.changed.outputs.files }}
+          python .github/scripts/renumber_readme_table.py \
+            '1º assunto/README.md' \
+            '2º assunto/README.md' \
+            '3º assunto/README.md'
 
       - name: Commit and push changes
-        if: steps.changed.outputs.files != ''
         shell: bash
         run: |
           if git diff --quiet -- '1º assunto/README.md' '2º assunto/README.md' '3º assunto/README.md'; then

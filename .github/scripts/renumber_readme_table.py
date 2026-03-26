@@ -6,9 +6,9 @@ import sys
 from pathlib import Path
 
 TARGET_FILENAMES = {
-    "IPEE/1º assunto/README.md",
-    "IPEE/2º assunto/README.md",
-    "IPEE/3º assunto/README.md",
+    "1º assunto/README.md",
+    "2º assunto/README.md",
+    "3º assunto/README.md",
 }
 
 
