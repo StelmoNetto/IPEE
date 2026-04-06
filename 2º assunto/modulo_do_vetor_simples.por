@@ -1,6 +1,6 @@
 programa
 {
-	inclua biblioteca Matematica --> mt
+	inclua biblioteca Matematica --> Mt
 	
 	funcao inicio()
 	{
@@ -18,9 +18,9 @@ programa
 			somatorio+= vetor[i] * vetor[i] //somatorio = somatorio + vetor[i] * vetor[i]
 		}
 
-		moduloDoVetor = mt.raiz(somatorio,2.0)
+		moduloDoVetor = Mt.raiz(somatorio,2.0)
 
-		escreva("O módulo do vetor de ",NUMERO_DE_ELEMENTOS, " elementos é igual a ", mt.arredondar(moduloDoVetor, 4),"\n")
+		escreva("O módulo do vetor de ",NUMERO_DE_ELEMENTOS, " elementos é igual a ", Mt.arredondar(moduloDoVetor, 4),"\n")
 
 		//Cálculo e exibição do vetor unitário
 		escreva("As componentes do vetor unitário são \n")
@@ -28,7 +28,7 @@ programa
 		{
 			vetor[i] = vetor[i] / moduloDoVetor
 
-			escreva(mt.arredondar(vetor[i], 4)," ")
+			escreva(Mt.arredondar(vetor[i], 4)," ")
 		}
 	}
 }
