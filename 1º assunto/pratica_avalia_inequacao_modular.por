@@ -1,6 +1,6 @@
 programa
 {
-	inclua biblioteca Matematica --> mt
+	inclua biblioteca Matematica --> Mt
 	
 	funcao inicio()
 	{
@@ -13,7 +13,7 @@ programa
 		satisfazInequacao = (x + a > b) ou (x + a < -b)
 
 		//Usando a função que calcula o módulo da biblioteca Matematica
-		//satisfazInequacao = mt.valor_absoluto(x + a) > b
+		//satisfazInequacao = Mt.valor_absoluto(x + a) > b
 
 		escreva("A inequação: |",x," + ",a,"| > ",b)
 

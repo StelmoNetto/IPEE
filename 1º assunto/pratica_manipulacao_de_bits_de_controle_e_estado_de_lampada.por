@@ -1,6 +1,6 @@
 programa
 {
-	inclua biblioteca Util --> ut
+	inclua biblioteca Util --> Ut
 	funcao inicio()
 	{
 		const inteiro TEMPO_DE_ESPERA_MS = 2000 //milissegundos
@@ -37,7 +37,7 @@ programa
 		
 		///Fim do item I
 
-		ut.aguarde(TEMPO_DE_ESPERA_MS)
+		Ut.aguarde(TEMPO_DE_ESPERA_MS)
 
 		//Item II:
 		escreva("Item II:\n")
@@ -57,7 +57,7 @@ programa
 		escreva("|X|...|X|X|Ligar|X|Queimada|X|X|X|\n")
 		escreva("|X|...|X|X|  ",ligarLampada,"  |X|   ",lampadaQueimada,"    |X|X|X|\n\n")		
 
-		ut.aguarde(TEMPO_DE_ESPERA_MS)
+		Ut.aguarde(TEMPO_DE_ESPERA_MS)
 
 		//Item III:
 		escreva("Item III:\n")
@@ -75,7 +75,7 @@ programa
 		escreva("|X|...|X|X|Ligar|X|Queimada|X|X|X|\n")
 		escreva("|X|...|X|X|  ",ligarLampada,"  |X|   ",lampadaQueimada,"    |X|X|X|\n\n")
 
-		ut.aguarde(TEMPO_DE_ESPERA_MS)
+		Ut.aguarde(TEMPO_DE_ESPERA_MS)
 
 		//Item IV:
 		escreva("Item IV:\n")

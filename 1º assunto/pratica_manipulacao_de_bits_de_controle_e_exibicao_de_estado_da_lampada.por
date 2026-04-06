@@ -1,6 +1,6 @@
 programa
 {
-	inclua biblioteca Util --> ut
+	inclua biblioteca Util --> Ut
 	funcao inicio()
 	{
 		const inteiro TEMPO_DE_ESPERA_MS = 2000 //milissegundos
@@ -28,7 +28,7 @@ programa
 		escreva("Lâmpada está queimada? ",lampadaEstaQueimada,"\n\n")
 		///Fim do item I
 
-		ut.aguarde(TEMPO_DE_ESPERA_MS)
+		Ut.aguarde(TEMPO_DE_ESPERA_MS)
 
 		//Item II:
 		escreva("Item II:\n")
@@ -38,7 +38,7 @@ programa
 		escreva("Valor do registro após o interruptor ir para a posição ligar: ",registro,"\n\n")
 		///Fim do item II
 
-		ut.aguarde(TEMPO_DE_ESPERA_MS)
+		Ut.aguarde(TEMPO_DE_ESPERA_MS)
 
 		//Item III:
 		escreva("Item III:\n")
@@ -46,7 +46,7 @@ programa
 		escreva("Valor do registro após negar todos os seus bits: ",registro,"\n\n")
 		///Fim do item III
 
-		ut.aguarde(TEMPO_DE_ESPERA_MS)
+		Ut.aguarde(TEMPO_DE_ESPERA_MS)
 
 		//Exibindo o estado do interruptor:
 		escreva("O estado do interruptor antes de alternar:\n")
@@ -54,7 +54,7 @@ programa
 		interruptorNaPosicaoLigado = bitSelecionado == LIGADO
 		escreva("Interruptor na posição ligar? ",interruptorNaPosicaoLigado,"\n\n")
 
-		ut.aguarde(TEMPO_DE_ESPERA_MS)
+		Ut.aguarde(TEMPO_DE_ESPERA_MS)
 
 		//Item IV:
 		escreva("Item IV:\n")
