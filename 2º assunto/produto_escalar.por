@@ -1,6 +1,6 @@
 programa
 {
-	inclua biblioteca Matematica --> mt
+	inclua biblioteca Matematica --> Mt
 	
 	funcao inicio()
 	{
@@ -31,7 +31,7 @@ programa
 		{
 			somatorioDosProdutosDasComponentes+= vetorA[i] * vetorB[i] //somatorioDosProdutosDasComponentes = somatorioDosProdutosDasComponentes + vetorA[i] * vetorB[i]
 		}
-		real produtoEscalar = mt.arredondar(somatorioDosProdutosDasComponentes,PRECISAO)
+		real produtoEscalar = Mt.arredondar(somatorioDosProdutosDasComponentes,PRECISAO)
 		escreva("O produto escalar é igual a ", produtoEscalar)
 	}
 }
