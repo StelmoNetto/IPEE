@@ -22,7 +22,7 @@ programa
 
 			logico eLimiteInferiorMenorQueSuperiorMasIncrementoNegativo = limiteInferior < limiteSuperior e incremento <= 0
 			logico eLimiteInferiorMaiorQueSuperiorMasIncrementoPositivo = limiteInferior > limiteSuperior e incremento >= 0
-			logico eLimiteInferiorIgualSuperiorMasIncrementoNaoNulo = limiteInferior == limiteSuperior e incremento != 0
+			logico eLimiteInferiorIgualSuperiorMasIncrementoNaoNulo = limiteInferior == limiteSuperior e incremento != 0.0
 
 			eIncrementoIncorreto = eLimiteInferiorMenorQueSuperiorMasIncrementoNegativo ou eLimiteInferiorMaiorQueSuperiorMasIncrementoPositivo ou eLimiteInferiorIgualSuperiorMasIncrementoNaoNulo
 
