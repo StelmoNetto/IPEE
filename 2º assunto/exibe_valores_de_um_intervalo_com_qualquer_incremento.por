@@ -17,7 +17,7 @@ programa
 			
 			incrementoPositivoMasLimiteInferiorMaiorQueSuperior = (incremento > 0) e (limiteInferior >= limiteSuperior)
 			incrementoNegativoMasLimiteInferiorMenorQueSuperior = (incremento < 0) e (limiteInferior <= limiteSuperior)
-			incrementoNuloMasLimiteInferiorDiferenteDoSuperior = (incremento == 0) e (limiteInferior != limiteSuperior)
+			incrementoNuloMasLimiteInferiorDiferenteDoSuperior = (incremento == 0.0) e (limiteInferior != limiteSuperior)
 			
 			oIncrementoEstaIncorreto = incrementoPositivoMasLimiteInferiorMaiorQueSuperior ou incrementoNegativoMasLimiteInferiorMenorQueSuperior ou incrementoNuloMasLimiteInferiorDiferenteDoSuperior
 			se(oIncrementoEstaIncorreto)
