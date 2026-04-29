@@ -5,9 +5,16 @@ programa
 	funcao inicio()
 	{
 		const inteiro NUMERO_DE_CASAS_DECIMAIS = 3
-		real resistencia, resistenciaEquivalente, somatorioDoInversoDasResistencias = 0.0
-		inteiro numeroDeResistores, contagemDeResistenciasCorretas = 1
-		logico numeroDeResistoresInvalido, resistenciaInvalida
+				
+		inteiro numeroDeResistores
+		inteiro contagemDeResistenciasCorretas = 1
+				
+		logico numeroDeResistoresInvalido
+		logico resistenciaInvalida
+
+		real resistencia
+		real resistenciaEquivalente
+		real somatorioDoInversoDasResistencias = 0.0		
 		
 		escreva("Programa calcula a resistência equivalente de qualquer número de resistores\n")
 
@@ -37,25 +44,14 @@ programa
 				}
 			}enquanto(resistenciaInvalida)
 
-			somatorioDoInversoDasResistencias+= 1.0 / resistencia //soma = soma + 1 / resistencia
+			somatorioDoInversoDasResistencias+= 1.0 / resistencia //somatorioDoInversoDasResistencias = somatorioDoInversoDasResistencias + 1 / resistencia
 			
-			contagemDeResistenciasCorretas++
+			contagemDeResistenciasCorretas++ //contagemDeResistenciasCorretas = contagemDeResistenciasCorretas + 1
 			
 		}enquanto(contagemDeResistenciasCorretas <= numeroDeResistores)
 
 		resistenciaEquivalente = 1 / somatorioDoInversoDasResistencias
 
-		escreva("A resistência equivalente dos ", numeroDeResistores, " resistores é igual a: ",Mt.arredondar(resistenciaEquivalente,NUMERO_DE_CASAS_DECIMAIS))
+		escreva("A resistência equivalente dos ", numeroDeResistores, " resistores é igual a: ",Mt.arredondar(resistenciaEquivalente,NUMERO_DE_CASAS_DECIMAIS)," ohm")
 	}
 }
-/* $$$ Portugol Studio $$$ 
- * 
- * Esta seção do arquivo guarda informações do Portugol Studio.
- * Você pode apagá-la se estiver utilizando outro editor.
- * 
- * @POSICAO-CURSOR = 86; 
- * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = ;
- * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
- * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
- */
