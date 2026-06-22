@@ -10,7 +10,7 @@ programa
 		real media = 0.0, nota
 		cadeia nome
 
-		escreva("Entre com o nome do aluno\n")
+		escreva("Entre com o nome da disciplina\n")
 		leia(nome)
 		Obj.atribuir_propriedade(enderecoDaEstrutura, "nome", nome)
 
@@ -30,19 +30,8 @@ programa
 		}
 		media/= 3
 		
-		escreva("A media do ",Obj.obter_propriedade_tipo_cadeia(enderecoDaEstrutura,"nome")," é: ",media,"\n")
+		escreva("A media da disciplina ",Obj.obter_propriedade_tipo_cadeia(enderecoDaEstrutura,"nome")," é: ",media,"\n")
 		
 		Obj.liberar()
 	}
 }
-/* $$$ Portugol Studio $$$ 
- * 
- * Esta seção do arquivo guarda informações do Portugol Studio.
- * Você pode apagá-la se estiver utilizando outro editor.
- * 
- * @POSICAO-CURSOR = 1171; 
- * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = ;
- * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
- * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
- */
